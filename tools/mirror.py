@@ -166,6 +166,8 @@ def rewrite(t):
         k = f"@@KEEP{len(keep)}@@"
         keep[k] = m.group(0).replace(ORIGIN, CANON)
         return k
+    # feeds and oEmbed endpoints do not exist on a static host
+    t = re.sub(r'<link[^>]+(?:application/rss\+xml|application/atom\+xml|oembed)[^>]*>\s*', "", t)
     t = KEEP_ABS.sub(stash, t)
     for host in sorted({ORIGIN, CANON, "https://www.southernhl.com", "http://southernhl.com", "http://www.southernhl.com"}, key=len, reverse=True):
         t = t.replace(host + "/", "/").replace(host.replace("/", "\\/") + "\\/", "\\/")
