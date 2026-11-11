@@ -15,7 +15,7 @@
       ]
     },
     {
-      "source": "/wp-includes/(.*)",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -29,6 +29,51 @@
       "source": "/homes-for-heroes-a-program-that-benefits-homebuyers-with-discounts-and-savings/",
       "destination": "/home-loans-for-first-responders/",
       "permanent": true
+    },
+    {
+      "source": "/blog/page/:n/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/category/:slug/page/:n/",
+      "destination": "/category/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/feed/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/:name(page|post|loans|service-areas|category)-sitemap.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/loans/hometown-heroes/",
+      "destination": "/loans/down-payment-assistance/",
+      "permanent": true
+    },
+    {
+      "source": "/loans/hometown-heros/",
+      "destination": "/loans/down-payment-assistance/",
+      "permanent": true
+    },
+    {
+      "source": "/loans/mobile-home-financing/",
+      "destination": "/loans/manufactured-home-financing/",
+      "permanent": true
+    },
+    {
+      "source": "/apply-online/",
+      "destination": "https://goluminate.tidalwave.ai/signup/brandon.crysler/D831E6THA3VLDR8GHACG",
+      "permanent": false
     }
   ]
 }
