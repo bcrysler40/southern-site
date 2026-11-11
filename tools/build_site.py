@@ -336,14 +336,6 @@ def render_home(p):
   </div>
   <div class="center" style="margin-top:34px"><a class="btn btn-line" href="/mortgage-process/">See the full mortgage process</a></div>
 </div></section>"""
-    about = f"""<section class="s"><div class="wrap split">
-  <div><img src="/wp-content/uploads/2022/05/15-year.jpg" alt="Family in front of their new home" loading="lazy"></div>
-  <div><span class="eyebrow">Why Southern Home Loans</span><h2>A leader in the home loan industry, with a hometown feel</h2>
-    <p>We provide our customers with simple ways to find their best home loan. Whether you're buying a new home or looking at a reverse mortgage to help make ends meet, we've made applying and qualifying easier than ever.</p>
-    <p>Because we're experienced experts, we've built the tools to help you get the loan you need without the headaches or uncertainty that often come with closing on a loan.</p>
-    <div class="btns" style="margin-top:22px"><a class="btn btn-navy" href="/about/">About our team</a><a class="btn btn-line" href="/contact/">Contact us</a></div>
-  </div>
-</div></section>"""
     investors = f"""<section class="s dark on-dark"><div class="wrap split">
   <div><span class="eyebrow">Self-employed &amp; investors</span><h2>Options for entrepreneurs and investors</h2>
     <p>Tired of endless hurdles and strict income verification? Our programs for self-employed borrowers and investors offer flexible bank statement requirements, generous loan amounts and attractive terms.</p>
@@ -356,7 +348,7 @@ def render_home(p):
   {post_cards(POSTS[:3])}
   <div class="center" style="margin-top:34px"><a class="btn btn-line" href="/blog/">Read more articles</a></div>
 </div></section>"""
-    return doc(p, hero + strip_ + loans + steps + about + investors + reviews() + blog + cta_band())
+    return doc(p, hero + strip_ + loans + steps + investors + reviews() + blog + cta_band())
 
 def render_content(p, crumbs=None, side_current="", show_grid_title="Explore loan options"):
     body, grid = render_sections(p.get("sections", []))
