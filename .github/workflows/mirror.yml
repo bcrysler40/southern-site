@@ -40,6 +40,7 @@ jobs:
         run: |
           rm -rf site
           python3 tools/mirror.py "${{ github.event.inputs.origin || vars.WP_ORIGIN || 'https://southernhl.com' }}"
+          python3 tools/cleanup.py
       - name: Commit the copy
         run: |
           git config user.name "site-mirror-bot"
