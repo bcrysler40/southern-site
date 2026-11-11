@@ -52,9 +52,14 @@ def local_path(u, is_page=False):
     return os.path.join(OUT, path.lstrip("/"))
 
 def save(path, data):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "wb") as f:
-        f.write(data)
+    try:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        if os.path.isdir(path):
+            path = os.path.join(path, "index.html")
+        with open(path, "wb") as f:
+            f.write(data)
+    except (IsADirectoryError, NotADirectoryError, FileExistsError) as e:
+        print("  could not save", path, e, flush=True)
 
 # ---------- 1. page list from sitemaps ----------
 pages = []
@@ -103,6 +108,8 @@ while queue:
     if key in done:
         continue
     done.add(key)
+    if "." not in os.path.basename(a.split("?")[0]):
+        continue  # a folder reference (e.g. a plugin base URL), not a file
     st, ct, b, _ = fetch(ORIGIN + a)
     if st != 200:
         continue
