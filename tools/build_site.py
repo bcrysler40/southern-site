@@ -104,7 +104,9 @@ def loan_menu():
     items += '<a href="/portfolio-products/">Portfolio Products (Investors)</a>'
     return items + '<a class="all" href="/loans/">View all loan options →</a>'
 
-def header():
+NO_APPLY = {"/loans/builder-advantage-program/"}   # pages with no Apply Now buttons
+
+def header(apply=True):
     social = "".join(f'<a href="{u}" target="_blank" rel="noopener" aria-label="{n}">{ICON[{"Facebook":"fb","Instagram":"ig","LinkedIn":"li"}[n]]}</a>' for n, u in SOCIAL)
     drawer_loans = "".join(f'<a href="{l["href"]}">{esc(l["title"])}</a>' for l in LOANS)
     return f"""
@@ -127,14 +129,14 @@ def header():
   </nav>
   <div class="hdr-cta">
     <a class="hdr-phone" href="tel:{PHONE_TEL}">{ICON['phone']} {PHONE}</a>
-    <a class="btn btn-teal btn-sm" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a>
+    {f'<a class="btn btn-teal btn-sm" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a>' if apply else '<a class="btn btn-teal btn-sm" href="/contact/">Contact Us</a>'}
   </div>
   <button class="burger" aria-label="Open menu" onclick="document.getElementById('drawer').classList.add('open')"><span></span><span></span><span></span></button>
 </div></header>
 <div class="drawer" id="drawer" onclick="if(event.target===this)this.classList.remove('open')"><div class="panel">
   <button class="x" aria-label="Close menu" onclick="document.getElementById('drawer').classList.remove('open')">×</button>
   <a href="/" style="border:0;padding-top:4px"><img src="{LOGO}" alt="Southern Home Loans" style="height:40px;width:auto"></a>
-  <div class="btns" style="margin:22px 0 6px"><a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a><a class="btn btn-line" href="tel:{PHONE_TEL}">Call</a></div>
+  <div class="btns" style="margin:22px 0 6px">{f'<a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a>' if apply else ''}<a class="btn btn-line" href="tel:{PHONE_TEL}">Call</a></div>
   <h4>Loan options</h4>{drawer_loans}<a href="/portfolio-products/">Portfolio Products (Investors)</a><a href="/loans/">All loan options</a>
   <h4>Buying a home</h4><a href="/mortgage-process/">The Mortgage Process</a><a href="/purchase-process/">The Purchase Process</a><a href="/mortgage-terms/">Mortgage Terms</a><a href="/builders/">For Builders</a>
   <h4>Company</h4><a href="/about/">About</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a>
@@ -142,10 +144,10 @@ def header():
 <div class="actionbar" aria-label="Quick actions">
   <a href="tel:{PHONE_TEL}">{ICON['phone']}Call</a>
   <a class="pri" href="#quote" onclick="return goQuote()">{ICON['doc']}Free Quote</a>
-  <a class="sec" href="{APPLY}" target="_blank" rel="noopener">{ICON['spark']}Apply</a>
+  {f'<a class="sec" href="{APPLY}" target="_blank" rel="noopener">{ICON["spark"]}Apply</a>' if apply else ''}
 </div>"""
 
-def footer():
+def footer(apply=True):
     loans = "".join(f'<li><a href="{l["href"]}">{esc(l["title"])}</a></li>' for l in LOANS[:9])
     social = "".join(f'<a href="{u}" target="_blank" rel="noopener" aria-label="{n}">{ICON[{"Facebook":"fb","Instagram":"ig","LinkedIn":"li"}[n]]}</a>' for n, u in SOCIAL)
     year = datetime.date.today().year
@@ -165,7 +167,7 @@ def footer():
       <li><a href="tel:{PHONE_TEL}">{PHONE}</a></li><li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
       <li>{ADDRESS[0]}<br>{ADDRESS[1]}</li>
       <li style="margin-top:8px"><b style="color:#fff">Brandon Crysler</b><br>Branch Manager · NMLS# {NMLS}</li></ul>
-      <a class="btn btn-teal btn-sm" style="margin-top:18px" href="{APPLY}" target="_blank" rel="noopener">Get Pre-Approved</a></div>
+      {f'<a class="btn btn-teal btn-sm" style="margin-top:18px" href="{APPLY}" target="_blank" rel="noopener">Get Pre-Approved</a>' if apply else ''}</div>
   </div>
   <div class="legal">
     <img src="/wp-content/uploads/2022/05/equalhousing_bw_lg.svg" alt="Equal Housing Opportunity" width="34" height="34">
@@ -196,12 +198,12 @@ function goQuote(){{var q=document.getElementById('quote');if(q){{q.scrollIntoVi
 </script>
 </body></html>"""
 
-def quote_form(title="Get your free quote", sub="Tell us a little about your plans and a loan officer will reach out with options and rates. No obligation.", anchor=True):
+def quote_form(title="Get your free quote", sub="Tell us a little about your plans and a loan officer will reach out with options and rates. No obligation.", anchor=True, apply=True):
     aid = ' id="quote"' if anchor else ""
     return f"""<div class="quote-card"{aid}>
   <h2>{esc(title)}</h2><p class="sub">{esc(sub)}</p>
   <div class="hs-form-frame" data-region="{HS_REGION}" data-form-id="{HS_FORM}" data-portal-id="{HS_PORTAL}"></div>
-  <p class="form-fallback">Prefer to talk? Call <a href="tel:{PHONE_TEL}">{PHONE}</a> or <a href="{APPLY}" target="_blank" rel="noopener">apply online</a>.</p>
+  <p class="form-fallback">Prefer to talk? Call <a href="tel:{PHONE_TEL}">{PHONE}</a>{f' or <a href="{APPLY}" target="_blank" rel="noopener">apply online</a>' if apply else ''}.</p>
 </div>"""
 
 def loan_cards(items=None, limit=None):
@@ -222,37 +224,38 @@ def post_cards(posts):
 <div class="bd"><div class="meta">{esc(p.get('category',''))} · {fmt_date(p.get('date'))}</div><h3>{esc(p['h1'])}</h3><p>{esc(p.get('description',''))}</p><span class="more">Read article →</span></div></a>""")
     return '<div class="cards">' + "".join(out) + "</div>"
 
-def cta_band(title="Ready to see what you qualify for?", text="Get pre-approved online in minutes, or talk with Brandon and the Southern Home Loans team today."):
+def cta_band(title="Ready to see what you qualify for?", text="Get pre-approved online in minutes, or talk with Brandon and the Southern Home Loans team today.", apply=True):
     return f"""<section class="s tight"><div class="wrap"><div class="cta-band">
   <div><h2>{esc(title)}</h2><p>{esc(text)}</p></div>
-  <div class="btns"><a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Get Pre-Approved</a><a class="btn btn-ghost" href="tel:{PHONE_TEL}">{ICON['phone']} {PHONE}</a></div>
+  <div class="btns">{f'<a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Get Pre-Approved</a>' if apply else ''}<a class="btn btn-ghost" href="tel:{PHONE_TEL}">{ICON['phone']} {PHONE}</a></div>
 </div></div></section>"""
 
 def reviews():
     return f"""<section class="s alt"><div class="wrap"><div class="s-head"><span class="eyebrow">Reviews</span><h2>What our borrowers say</h2></div>
 <div class="reviews"><div class="{ELFSIGHT}" data-elfsight-app-lazy></div></div></div></section>"""
 
-def sidebar(current=""):
+def sidebar(current="", apply=True):
     links = "".join(f'<a href="{l["href"]}">{esc(l["title"])}</a>' for l in LOANS if l["href"] != current)
     return f"""<aside class="side">
   <div class="side-card">
     <div class="lo"><img src="{BRANDON}" alt="Brandon Crysler" width="64" height="64"><div><b>Brandon Crysler</b><span>Branch Manager · NMLS# {NMLS}</span></div></div>
-    <h3 style="margin-top:20px">Get pre-approved today</h3>
-    <p style="margin:0">Apply online in minutes or get a free, no-obligation quote.</p>
-    <a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a>
+    {'<h3 style="margin-top:20px">Get pre-approved today</h3>' if apply else '<h3 style="margin-top:20px">Contact today to learn more.</h3>'}
+    {f"""<p style="margin:0">Apply online in minutes or get a free, no-obligation quote.</p>
+    <a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a>""" if apply else ''}
     <a class="btn btn-ghost" href="#quote" onclick="return goQuote()">Free Quote</a>
     <a class="ph-line" href="tel:{PHONE_TEL}">{ICON['phone']} {PHONE}</a>
   </div>
   <div class="side-links"><h4>Loan options</h4>{links}</div>
 </aside>"""
 
-def page_hero(p, eyebrow=None, lead=None, image=None, buttons=True, crumbs=None, extra=""):
+def page_hero(p, eyebrow=None, lead=None, image=None, buttons=True, crumbs=None, extra="", apply=True):
     h = p.get("hero", {})
     eyebrow = eyebrow if eyebrow is not None else titlecase(h.get("eyebrow", ""))
     lead = lead if lead is not None else h.get("lead", "")
     image = image if image is not None else h.get("image", "")
     img_html = f'<div class="hero-img"><img src="{image}" alt="" fetchpriority="high"></div>' if image else ""
-    btns = f"""<div class="btns" style="margin-top:26px"><a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a>
+    apply_btn = f'<a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a>' if apply else ''
+    btns = f"""<div class="btns" style="margin-top:26px">{apply_btn}
 <a class="btn btn-ghost" href="#quote" onclick="return goQuote()">Get a Free Quote</a></div>""" if buttons else ""
     cr = ""
     if crumbs:
@@ -294,7 +297,7 @@ def write(url, doc):
         f.write(doc)
 
 def doc(p, main, **kw):
-    return head(p, **kw) + header() + f'<main id="main">{main}</main>' + footer() + SCRIPTS
+    return head(p, **kw) + header(p.get("url") not in NO_APPLY) + f'<main id="main">{main}</main>' + footer(p.get("url") not in NO_APPLY) + SCRIPTS
 
 # ---------------------------------------------------------------- page types
 def render_home(p):
@@ -358,10 +361,12 @@ def render_home(p):
 def render_content(p, crumbs=None, side_current="", show_grid_title="Explore loan options"):
     body, grid = render_sections(p.get("sections", []))
     grid_html = f"""<section class="s alt"><div class="wrap"><div class="s-head"><h2>{esc(show_grid_title)}</h2></div>{loan_cards()}</div></section>""" if grid else ""
-    main = page_hero(p, crumbs=crumbs) + f"""<section class="s"><div class="wrap content-grid">
-  <div class="prose content">{body}<div style="margin-top:44px">{quote_form()}</div></div>
-  {sidebar(side_current)}
-</div></section>""" + grid_html + reviews() + cta_band()
+    ap = p.get("url") not in NO_APPLY
+    band = cta_band() if ap else cta_band("Ready to run the numbers?", "Talk with Brandon and the Southern Home Loans team today.", apply=False)
+    main = page_hero(p, crumbs=crumbs, apply=ap) + f"""<section class="s"><div class="wrap content-grid">
+  <div class="prose content">{body}<div style="margin-top:44px">{quote_form(apply=ap)}</div></div>
+  {sidebar(side_current, apply=ap)}
+</div></section>""" + grid_html + reviews() + band
     return doc(p, main)
 
 def render_post(p):
