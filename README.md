@@ -11,3 +11,8 @@ After southernhl.com points at Vercel, run it with the WordPress server's other 
 
 Forms: HubSpot embedded forms work as-is. The reverse-mortgage Gravity Form is replaced by a script
 that submits to HubSpot form f7c9da26 (portal 242109586).
+
+## After southernhl.com points to Vercel
+The workflow pins southernhl.com to the WordPress server (149.28.254.156, GitHub variable `WP_SERVER_IP`)
+so refreshes still copy from WordPress. If that server's SSL certificate later expires (it can no longer
+renew once the domain points elsewhere), set the GitHub variable `MIRROR_INSECURE` to `1`.

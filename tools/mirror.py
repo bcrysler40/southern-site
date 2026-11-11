@@ -22,11 +22,14 @@ HOSTS = {urllib.parse.urlparse(ORIGIN).netloc, "southernhl.com", "www.southernhl
 HUBSPOT_PORTAL = "242109586"
 HUBSPOT_FORM = "f7c9da26-9530-4f31-92b1-4db11e576281"
 
+import ssl
+SSL_CTX = ssl._create_unverified_context() if os.environ.get("MIRROR_INSECURE") else None
+
 def fetch(url, tries=3):
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
-            with urllib.request.urlopen(req, timeout=60) as r:
+            with urllib.request.urlopen(req, timeout=60, context=SSL_CTX) as r:
                 return r.status, r.headers.get("Content-Type", ""), r.read(), r.geturl()
         except urllib.error.HTTPError as e:
             if e.code in (404, 410, 403):

@@ -29,7 +29,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Point southernhl.com at the WordPress server
+        # After the domain moves to Vercel, this keeps the copy coming from WordPress, not from Vercel itself.
+        run: |
+          IP="${{ vars.WP_SERVER_IP || '149.28.254.156' }}"
+          echo "$IP southernhl.com www.southernhl.com" | sudo tee -a /etc/hosts
       - name: Copy the site
+        env:
+          MIRROR_INSECURE: ${{ vars.MIRROR_INSECURE || '' }}
         run: |
           rm -rf site
           python3 tools/mirror.py "${{ github.event.inputs.origin || vars.WP_ORIGIN || 'https://southernhl.com' }}"
