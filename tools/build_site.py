@@ -19,6 +19,18 @@ APPLY = "https://goluminate.tidalwave.ai/signup/brandon.crysler/D831E6THA3VLDR8G
 NMLS = "162096"
 HS_PORTAL, HS_FORM, HS_REGION = "242109586", "f7c9da26-9530-4f31-92b1-4db11e576281", "na2"
 ELFSIGHT = "elfsight-app-f2051ee6-0c7b-461c-9366-2b071b010398"
+# Google Business Profile (Southern Home Loans | Luminate Bank, 2050 E Silver Springs Blvd)
+GOOGLE_PLACE_ID = "ChIJ9_Vzv7Qs5ogRE5TljgYHvHw"
+GOOGLE_REVIEWS = f"https://search.google.com/local/reviews?placeid={GOOGLE_PLACE_ID}"
+GOOGLE_MAPS = f"https://www.google.com/maps/place/?q=place_id:{GOOGLE_PLACE_ID}"
+GOOGLE_WRITE_REVIEW = f"https://search.google.com/local/writereview?placeid={GOOGLE_PLACE_ID}"
+# Builder Advantage advertised rate - the APR must appear wherever the rate does (Reg Z 1026.24(c))
+BUILDER_RATE, BUILDER_APR = "4.99%", "5.838%"
+BUILDER_NOTE = (f"*Builder Advantage: {BUILDER_RATE} interest rate, {BUILDER_APR} Annual Percentage Rate (APR), "
+    "on a fixed-rate FHA purchase loan available only through a builder forward commitment on select new homes, "
+    "for qualified buyers who close within the commitment period. Rates, terms and availability are subject to change "
+    "without notice. Not all applicants will qualify. "
+    '<a href="/loans/builder-advantage-program/">See program terms and a payment example</a>.')
 META_PIXEL, GOOGLE_ADS = "1267196966680196", "AW-957845406"
 SOCIAL = [("Facebook", "https://www.facebook.com/TeamSHL"), ("Instagram", "https://www.instagram.com/southernhl/"),
           ("LinkedIn", "https://www.linkedin.com/in/bcrysler/")]
@@ -29,6 +41,59 @@ HERO = "/wp-content/uploads/2022/05/Homepage-Hero.jpg"
 PAGES = json.load(open(os.path.join(ROOT, "content", "pages.json")))
 LOANS = json.load(open(os.path.join(ROOT, "content", "loans.json")))
 BY_URL = {p["url"]: p for p in PAGES}
+SEO = json.load(open(os.path.join(ROOT, "content", "seo.json")))
+AREAS = [("Ocala", "/service-areas/ocala/"), ("Gainesville", "/service-areas/gainesville/"), ("Crystal River", "/service-areas/crystal-river/"),
+         ("Inverness", "/service-areas/inverness/"), ("Spring Hill", "/service-areas/spring-hill/"), ("Hernando", "/service-areas/hernando/"),
+         ("Levy County", "/service-areas/levy-county/"), ("All of Florida", "/service-areas/mortgages-and-fha-loans-in-florida/")]
+
+def _meta_set(meta, key, value):
+    """Replace the content of an og:/twitter: tag (Yoast/RankMath output) or add it."""
+    pat = re.compile(r'<meta content="[^"]*" (?:property|name)="' + re.escape(key) + '"/>')
+    tag_attr = "property" if key.startswith(("og:", "article:")) else "name"
+    new = f'<meta content="{esc(value)}" {tag_attr}="{key}"/>'
+    for i, m in enumerate(meta):
+        if pat.fullmatch(m.strip()):
+            meta[i] = new; return
+    meta.append(new)
+
+def apply_seo(p):
+    """Layer content/seo.json (titles, descriptions, FAQs) and schema fixes onto a page."""
+    o = SEO["pages"].get(p["url"], {})
+    if o.get("title"): p["title"] = o["title"]
+    if o.get("description"): p["description"] = o["description"]
+    meta = [m for m in p.get("meta", []) if not re.search(r'name="twitter:(label|data)\d"', m)]   # "Written by cody" leftovers
+    meta = [re.sub(r'content="@https://twitter.com/SouthernHL"', 'content="@SouthernHL"', m) for m in meta]
+    url = p.get("canonical") or DOMAIN + p["url"]
+    for k, v in (("og:title", p.get("title")), ("twitter:title", p.get("title")), ("og:description", p.get("description")),
+                 ("twitter:description", p.get("description")), ("og:url", url)):
+        if v: _meta_set(meta, k, v)
+    if not any('og:image"' in m for m in meta):
+        _meta_set(meta, "og:image", DOMAIN + (p.get("image") or HERO)); _meta_set(meta, "twitter:card", "summary_large_image")
+    p["meta"] = meta
+    lds = []
+    for j in p.get("jsonld", []):
+        j = (j.replace('"https://southernhl.com/author/cody/"', '"https://southernhl.com/about/#brandon"')
+              .replace('"name":"cody"', '"name":"Brandon Crysler"').replace('"caption":"cody"', '"caption":"Brandon Crysler"'))
+        j = re.sub(r'"https://southernhl.com/wp-content/litespeed/avatar/[^"]*"', '"' + DOMAIN + BRANDON + '"', j)
+        try: d = json.loads(j)
+        except ValueError: lds.append(j); continue
+        for n in d.get("@graph", [d]):
+            if n.get("@id", "").endswith("#organization"):
+                n["sameAs"] = [u for _, u in SOCIAL] + ["https://twitter.com/SouthernHL", GOOGLE_MAPS]
+                n["openingHours"] = ["Mo-Fr 08:30-17:30"]
+                n.setdefault("telephone", "+1-" + PHONE)
+                n["areaServed"] = {"@type": "State", "name": "Florida"}
+            if n.get("@type") == "WebPage" and o.get("title"):
+                n["name"] = p["title"]
+                if p.get("description"): n["description"] = p["description"]
+        lds.append(json.dumps(d, ensure_ascii=False, separators=(",", ":")))
+    faqs = SEO["faqs"].get(p["url"])
+    if faqs:
+        p["faqs"] = faqs
+        lds.append(json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}, ensure_ascii=False, separators=(",", ":")))
+    p["jsonld"] = lds
+
 POSTS = sorted([p for p in PAGES if p["kind"] == "post"], key=lambda p: p.get("date", ""), reverse=True)
 CATS = {}
 for p in PAGES:
@@ -37,6 +102,9 @@ for p in PAGES:
         CATS[p["url"]] = name
 
 esc = lambda s: html.escape(s or "", quote=True)
+
+for _p in PAGES:
+    apply_seo(_p)
 
 def strip(s):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", s or ""))).strip()
@@ -122,7 +190,7 @@ def header(apply=True):
     <div><button aria-haspopup="true">Buying a Home {ICON['down']}</button><div class="mega sm">
       <a href="/mortgage-process/">The Mortgage Process</a><a href="/purchase-process/">The Purchase Process</a>
       <a href="/mortgage-terms/">Mortgage Terms</a><a href="/moving-to-marion-county-fl/">Moving to Marion County</a>
-      <a href="/builders/">For Builders</a></div></div>
+      <a href="/service-areas/ocala/">Ocala Home Loans</a><a href="/builders/">For Builders</a></div></div>
     <div><a href="/about/">About</a></div>
     <div><a href="/blog/">Blog</a></div>
     <div><a href="/contact/">Contact</a></div>
@@ -138,7 +206,7 @@ def header(apply=True):
   <a href="/" style="border:0;padding-top:4px"><img src="{LOGO}" alt="Southern Home Loans" style="height:40px;width:auto"></a>
   <div class="btns" style="margin:22px 0 6px">{f'<a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a>' if apply else ''}<a class="btn btn-line" href="tel:{PHONE_TEL}">Call</a></div>
   <h4>Loan options</h4>{drawer_loans}<a href="/portfolio-products/">Portfolio Products (Investors)</a><a href="/loans/">All loan options</a>
-  <h4>Buying a home</h4><a href="/mortgage-process/">The Mortgage Process</a><a href="/purchase-process/">The Purchase Process</a><a href="/mortgage-terms/">Mortgage Terms</a><a href="/builders/">For Builders</a>
+  <h4>Buying a home</h4><a href="/mortgage-process/">The Mortgage Process</a><a href="/purchase-process/">The Purchase Process</a><a href="/mortgage-terms/">Mortgage Terms</a><a href="/moving-to-marion-county-fl/">Moving to Marion County</a><a href="/service-areas/ocala/">Ocala Home Loans</a><a href="/builders/">For Builders</a>
   <h4>Company</h4><a href="/about/">About</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a>
 </div></div>
 <div class="actionbar" aria-label="Quick actions">
@@ -163,6 +231,7 @@ def footer(apply=True):
     <div><h4>Company</h4><ul>
       <li><a href="/about/">About</a></li><li><a href="/mortgage-process/">Mortgage Process</a></li><li><a href="/purchase-process/">Purchase Process</a></li>
       <li><a href="/mortgage-terms/">Mortgage Terms</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact/">Contact</a></li><li><a href="/builders/">For Builders</a></li></ul></div>
+    <div><h4>Areas we serve</h4><ul>{"".join(f'<li><a href="{u}">{esc(n)}</a></li>' for n, u in AREAS)}</ul></div>
     <div><h4>Contact</h4><ul>
       <li><a href="tel:{PHONE_TEL}">{PHONE}</a></li><li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
       <li>{ADDRESS[0]}<br>{ADDRESS[1]}</li>
@@ -211,16 +280,17 @@ def loan_cards(items=None, limit=None):
     if limit: items = items[:limit]
     out = []
     for l in items:
-        tag = '<span class="tag">4.99% Builder Rate</span>' if "builder-advantage" in l["href"] else ""
-        out.append(f"""<a class="card" href="{l['href']}"><div class="ph">{tag}<img src="{l['img']}" alt="" loading="lazy"></div>
+        tag = f'<span class="tag">{BUILDER_RATE} ({BUILDER_APR} APR)*</span>' if "builder-advantage" in l["href"] else ""
+        out.append(f"""<a class="card" href="{l['href']}"><div class="ph">{tag}<img src="{l['img']}" alt="{esc(l['title'])}" loading="lazy"></div>
 <div class="bd"><h3>{esc(l['title'])}</h3><p>{esc(l['desc'])}</p><span class="more">Learn more →</span></div></a>""")
-    return '<div class="cards">' + "".join(out) + "</div>"
+    note = f'<p class="rate-note">{BUILDER_NOTE}</p>' if any("builder-advantage" in l["href"] for l in items) else ""
+    return '<div class="cards">' + "".join(out) + "</div>" + note
 
 def post_cards(posts):
     out = []
     for p in posts:
         img = p.get("image") or HERO
-        out.append(f"""<a class="card" href="{p['url']}"><div class="ph"><img src="{img}" alt="" loading="lazy"></div>
+        out.append(f"""<a class="card" href="{p['url']}"><div class="ph"><img src="{img}" alt="{esc(p['h1'])}" loading="lazy"></div>
 <div class="bd"><div class="meta">{esc(p.get('category',''))} · {fmt_date(p.get('date'))}</div><h3>{esc(p['h1'])}</h3><p>{esc(p.get('description',''))}</p><span class="more">Read article →</span></div></a>""")
     return '<div class="cards">' + "".join(out) + "</div>"
 
@@ -232,7 +302,8 @@ def cta_band(title="Ready to see what you qualify for?", text="Get pre-approved 
 
 def reviews():
     return f"""<section class="s alt"><div class="wrap"><div class="s-head"><span class="eyebrow">Reviews</span><h2>What our borrowers say</h2></div>
-<div class="reviews"><div class="{ELFSIGHT}" data-elfsight-app-lazy></div></div></div></section>"""
+<div class="reviews"><div class="{ELFSIGHT}" data-elfsight-app-lazy></div></div>
+<div class="btns review-links"><a class="btn btn-navy" href="{GOOGLE_REVIEWS}" target="_blank" rel="noopener">Read our Google reviews</a><a class="btn btn-line" href="{GOOGLE_WRITE_REVIEW}" target="_blank" rel="noopener">Leave us a review</a></div></div></section>"""
 
 def sidebar(current="", apply=True):
     links = "".join(f'<a href="{l["href"]}">{esc(l["title"])}</a>' for l in LOANS if l["href"] != current)
@@ -253,7 +324,7 @@ def page_hero(p, eyebrow=None, lead=None, image=None, buttons=True, crumbs=None,
     eyebrow = eyebrow if eyebrow is not None else titlecase(h.get("eyebrow", ""))
     lead = lead if lead is not None else h.get("lead", "")
     image = image if image is not None else h.get("image", "")
-    img_html = f'<div class="hero-img"><img src="{image}" alt="" fetchpriority="high"></div>' if image else ""
+    img_html = f'<div class="hero-img"><img src="{image}" alt="{esc(strip(p.get('h1','')))}" fetchpriority="high"></div>' if image else ""
     apply_btn = f'<a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a>' if apply else ''
     btns = f"""<div class="btns" style="margin-top:26px">{apply_btn}
 <a class="btn btn-ghost" href="#quote" onclick="return goQuote()">Get a Free Quote</a></div>""" if buttons else ""
@@ -266,7 +337,7 @@ def page_hero(p, eyebrow=None, lead=None, image=None, buttons=True, crumbs=None,
 </div></section>"""
 
 def is_loan_grid(sec):
-    return sec.count('href="/loans/') >= 5
+    return sec.count('href="/loans/') >= 5 and "<img" in sec   # WordPress loan-card grid, not written copy with links
 
 def is_form_stub(sec):
     t = strip(sec)
@@ -289,10 +360,15 @@ def render_sections(secs):
         blocks.append(f'<div class="block">{s}</div>')
     return "".join(blocks), grid
 
+OLD_LINKS = {"/loans/hometown-heroes/": "/loans/down-payment-assistance/", "/loans/hometown-heros/": "/loans/down-payment-assistance/",
+             "/loans/mobile-home-financing/": "/loans/manufactured-home-financing/", "/apply-online/": APPLY}
+
 def write(url, doc):
     path = os.path.join(OUT, url.strip("/"), "index.html") if url != "/" else os.path.join(OUT, "index.html")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     doc = doc.replace("%C2%A0\"", "\"")   # stray non-breaking spaces at the end of links
+    for old, new in OLD_LINKS.items():   # point old WordPress links straight at their redirect targets
+        doc = doc.replace(f'href="{old}"', f'href="{new}"')
     with open(path, "w", encoding="utf-8") as f:
         f.write(doc)
 
@@ -304,8 +380,8 @@ def render_home(p):
     hero = f"""<section class="hero hero-home on-dark" style="--hero-img:url('{HERO}')"><div class="wrap">
   <div>
     <span class="eyebrow">Southern Home Loans · Ocala, Florida</span>
-    <h1>Home loans in Central Florida, made simple.</h1>
-    <p class="lead">Local guidance, 50-state reach. See why Southern Home Loans lends in 50 states and still feels like your neighbor.</p>
+    <h1>Florida home loans, made simple.</h1>
+    <p class="lead">Local guidance from Ocala, lending across Florida. See why Southern Home Loans lends in 50 states and still feels like your neighbor.</p>
     <ul class="checks">
       <li>FHA, VA, USDA, conventional, jumbo, construction and land loans</li>
       <li>Down payment assistance, including Florida Hometown Heroes and SHIP</li>
@@ -341,7 +417,7 @@ def render_home(p):
     <p>Tired of endless hurdles and strict income verification? Our programs for self-employed borrowers and investors offer flexible bank statement requirements, generous loan amounts and attractive terms.</p>
     <ul class="checks"><li>3-month bank statement</li><li>12-month bank statement</li><li>Investor cash flow (DSCR)</li><li>ATR-in-full</li></ul>
     <a class="btn btn-teal" href="/portfolio-products/">Explore portfolio products</a></div>
-  <div><img src="/wp-content/uploads/2023/06/Portfolio-Products1-636x1024.jpg" alt="" loading="lazy" style="max-height:520px;width:auto;margin:0 auto"></div>
+  <div><img src="/wp-content/uploads/2023/06/Portfolio-Products1-636x1024.jpg" alt="Self-employed home buyer reviewing bank statement loan options" loading="lazy" style="max-height:520px;width:auto;margin:0 auto"></div>
 </div></section>"""
     blog = f"""<section class="s"><div class="wrap">
   <div class="s-head"><span class="eyebrow">From the blog</span><h2>Home buying tips and market updates</h2></div>
@@ -355,8 +431,12 @@ def render_content(p, crumbs=None, side_current="", show_grid_title="Explore loa
     grid_html = f"""<section class="s alt"><div class="wrap"><div class="s-head"><h2>{esc(show_grid_title)}</h2></div>{loan_cards()}</div></section>""" if grid else ""
     ap = p.get("url") not in NO_APPLY
     band = cta_band() if ap else cta_band("Ready to run the numbers?", "Talk with Brandon and the Southern Home Loans team today.", apply=False)
+    faq = ""
+    if p.get("faqs"):
+        faq = '<div class="block faq"><h2>Frequently asked questions</h2>' + "".join(
+            f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in p["faqs"]) + "</div>"
     main = page_hero(p, crumbs=crumbs, apply=ap) + f"""<section class="s"><div class="wrap content-grid">
-  <div class="prose content">{body}<div style="margin-top:44px">{quote_form(apply=ap)}</div></div>
+  <div class="prose content">{body}{faq}<div style="margin-top:44px">{quote_form(apply=ap)}</div></div>
   {sidebar(side_current, apply=ap)}
 </div></section>""" + grid_html + reviews() + band
     return doc(p, main)
@@ -367,7 +447,7 @@ def render_post(p):
     hero = f"""<section class="hero page-hero noimg on-dark" style="--hero-img:url('{p.get('image') or HERO}')"><div class="wrap" style="padding-bottom:90px">
   <div><div class="crumbs"><a href="/">Home</a> / <a href="/blog/">Blog</a> / <a href="{cat_url}">{esc(p.get('category',''))}</a></div>
   <h1>{esc(p['h1'])}</h1>{meta}</div></div></section>"""
-    feat = f'<div class="post-feature"><img src="{p["image"]}" alt="" fetchpriority="high"></div>' if p.get("image") else ""
+    feat = f'<div class="post-feature"><img src="{p["image"]}" alt="{esc(p["h1"])}" fetchpriority="high"></div>' if p.get("image") else ""
     related = [x for x in POSTS if x["url"] != p["url"] and x.get("category") == p.get("category")][:3] or [x for x in POSTS if x["url"] != p["url"]][:3]
     main = hero + feat + f"""<section class="s" style="padding-top:56px"><div class="wrap content-grid">
   <article class="prose content">{p['body']}

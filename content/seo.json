@@ -1,0 +1,187 @@
+{
+ "_note": "Search titles, descriptions and FAQs layered on top of pages.json by tools/build_site.py. Keep titles under ~60 characters and descriptions under ~155. Avoid Reg Z trigger terms (down payment amounts/percentages, payment amounts, number of payments, finance charges) unless the full disclosure is next to them.",
+ "pages": {
+  "/": {
+   "title": "Southern Home Loans | Ocala, FL Mortgage Lender for All of Florida",
+   "description": "Ocala-based mortgage lender serving all of Florida. FHA, VA, USDA, conventional, construction, land and down payment assistance loans. Get pre-approved today."
+  },
+  "/loans/": {
+   "title": "Florida Home Loan Options | Southern Home Loans",
+   "description": "Compare FHA, VA, USDA, conventional, jumbo, construction, land, 203(k), reverse and manufactured home loans from Southern Home Loans in Ocala, FL."
+  },
+  "/loans/builder-advantage-program/": {
+   "title": "Builder Advantage Program | Builder Forward Commitments",
+   "description": "Forward-commitment financing that lets Florida builders offer qualified buyers a below-market fixed rate on new homes. See the rate, APR and full terms."
+  },
+  "/loans/ship/": {
+   "title": "SHIP Purchase Assistance in Marion County | Southern Home Loans",
+   "description": "Marion County and Ocala buyers may qualify for SHIP purchase assistance toward a down payment and closing costs. See how the program works and apply."
+  },
+  "/loans/lot-and-land-loans/": {
+   "title": "Lot and Land Loans in Florida | Southern Home Loans",
+   "description": "Finance a building lot or acreage in Florida, then roll it into a construction loan when you're ready to build. Local guidance from our Ocala team."
+  },
+  "/loans/construction-loans/": {
+   "title": "Construction Loans in Florida | One-Time Close | Southern Home Loans",
+   "description": "Build your home with an FHA, VA, USDA or conventional construction-to-permanent loan. Options for primary, second and investment homes across Florida."
+  },
+  "/loans/30-year-fixed-mortgage/": {
+   "title": "30-Year Fixed Mortgage in Florida | Southern Home Loans",
+   "description": "Lock in a steady principal and interest payment for the life of your loan with a 30-year fixed mortgage from Southern Home Loans. Free quote in minutes."
+  },
+  "/loans/down-payment-assistance/": {
+   "title": "Florida Down Payment Assistance Programs | Southern Home Loans",
+   "description": "Get help with your down payment and closing costs through Florida Hometown Heroes, county SHIP programs and more. See which programs you qualify for."
+  },
+  "/loans/15-year-fixed-mortgage/": {
+   "title": "15-Year Fixed Mortgage in Florida | Southern Home Loans",
+   "description": "Pay your home off faster and save on interest with a 15-year fixed-rate mortgage. Compare it with a 30-year loan and get a free quote from our Ocala team."
+  },
+  "/loans/adjustable-rate-mortgage/": {
+   "title": "Adjustable-Rate Mortgage (ARM) in Florida | Southern Home Loans",
+   "description": "See how an adjustable-rate mortgage works, how the fixed period and rate caps protect you, and whether an ARM fits your plans. Free quote from our team."
+  },
+  "/loans/fha-loans/": {
+   "title": "FHA Loans in Florida | Low Down Payment | Southern Home Loans",
+   "description": "FHA home loans with a low down payment and flexible credit guidelines for Florida buyers, including first-time buyers. Get pre-approved in minutes."
+  },
+  "/loans/va-loans/": {
+   "title": "VA Loans in Florida for Veterans | Southern Home Loans",
+   "description": "VA home loans for Florida veterans, service members and eligible surviving spouses, with no monthly mortgage insurance. Get your VA pre-approval today."
+  },
+  "/loans/jumbo-loans/": {
+   "title": "Jumbo Loans in Florida | Southern Home Loans",
+   "description": "Financing for Florida homes priced above the conforming loan limit, including second homes and luxury properties. Talk with our Ocala jumbo loan team."
+  },
+  "/loans/203k-loans/": {
+   "title": "FHA 203(k) Renovation Loans in Florida | Southern Home Loans",
+   "description": "Buy a fixer-upper and finance the repairs in one FHA 203(k) loan. See the difference between Limited and Standard 203(k) loans and get a free quote."
+  },
+  "/loans/usda-loans/": {
+   "title": "USDA Home Loans in Florida | Southern Home Loans",
+   "description": "USDA rural development home loans for eligible Florida buyers in qualifying areas, including much of Marion, Levy and Citrus counties. Check eligibility."
+  },
+  "/loans/reverse-mortgage/": {
+   "title": "Reverse Mortgage (HECM) in Florida | Southern Home Loans",
+   "description": "Florida homeowners 62 and older can turn home equity into cash with an FHA-insured reverse mortgage (HECM). Learn how it works and what's required."
+  },
+  "/loans/manufactured-home-financing/": {
+   "title": "Manufactured Home Loans in Florida | Southern Home Loans",
+   "description": "FHA, VA, USDA and conventional financing for manufactured homes on a permanent foundation and land you own in Florida. Get a free quote today."
+  },
+  "/portfolio-products/": {
+   "title": "Bank Statement & DSCR Loans in Florida | Southern Home Loans",
+   "description": "Self-employed and investor loans: 3- and 12-month bank statement programs, DSCR investor cash-flow loans and ATR-in-full options across Florida."
+  },
+  "/builders/": {
+   "title": "New Construction Homes with Builder Rate | Southern Home Loans",
+   "description": "Buy a new home from our partner builders in Marion and Citrus counties with the Builder Advantage forward-commitment rate. See homes and full terms."
+  },
+  "/mortgage-process/": {
+   "title": "The Mortgage Process, Step by Step | Southern Home Loans",
+   "description": "From pre-approval to closing, see each step of getting a mortgage with Southern Home Loans, what documents you'll need and how long each step takes."
+  },
+  "/purchase-process/": {
+   "title": "The Home Purchase Process in Florida | Southern Home Loans",
+   "description": "A step-by-step guide to buying a home in Florida: pre-approval, making an offer, inspections, appraisal, final approval and closing day."
+  },
+  "/mortgage-terms/": {
+   "title": "Mortgage Terms Glossary | Southern Home Loans",
+   "description": "Plain-English definitions of common mortgage terms, from APR and escrow to PMI and underwriting, so you know what every word on your loan means."
+  },
+  "/moving-to-marion-county-fl/": {
+   "title": "Moving to Marion County, FL: Ocala Area Guide",
+   "description": "Thinking about moving to Ocala or Marion County, Florida? Things to do, the local economy and how to finance your home with a local lender."
+  },
+  "/about/": {
+   "title": "About Southern Home Loans | Ocala, FL Mortgage Lender",
+   "description": "Southern Home Loans, a division of Luminate Bank, has helped Florida families finance homes since 2000. Meet Branch Manager Brandon Crysler and the team."
+  },
+  "/contact/": {
+   "title": "Contact Southern Home Loans | Ocala, FL | 352-622-1521",
+   "description": "Visit us at 2050 E Silver Springs Blvd, Ocala, FL 34470 or call 352-622-1521. Get a free mortgage quote or apply online with Southern Home Loans."
+  },
+  "/blog/": {
+   "title": "HomeTown Blog: Florida Home Buying Tips | Southern Home Loans",
+   "description": "Home buying tips, loan program guides and Florida mortgage market updates from Brandon Crysler and the Southern Home Loans team in Ocala."
+  },
+  "/licensing/": {
+   "title": "Licensing | Southern Home Loans",
+   "description": "Licensing information for Southern Home Loans, a division of Luminate Bank, NMLS# 162096. Licensed in all states except New York."
+  },
+  "/congress-just-passed-a-game-changing-housing-bill/": {
+   "description": "What the new federal housing bill means for Marion County home buyers, Realtors and builders, and how it could affect your next purchase."
+  }
+ },
+ "faqs": {
+  "/loans/fha-loans/": [
+   ["Who is an FHA loan a good fit for?", "FHA loans are insured by the Federal Housing Administration, so lenders can offer a low down payment and more flexible credit guidelines than most conventional loans. They are popular with first-time buyers and with buyers who are rebuilding their credit."],
+   ["Do FHA loans have mortgage insurance?", "Yes. FHA loans carry an upfront mortgage insurance premium, which is usually financed into the loan, and an annual premium that is paid monthly. We'll show you exactly what it adds to your payment before you apply."],
+   ["Can I use down payment assistance with an FHA loan?", "Often, yes. Florida programs such as Hometown Heroes and county SHIP programs can be paired with an FHA first mortgage when funds are available and you meet the program's income and purchase price limits."],
+   ["Is there a maximum FHA loan amount?", "FHA sets loan limits by county each year. We'll confirm the current limit for the Florida county you're buying in when we pre-approve you."]
+  ],
+  "/loans/va-loans/": [
+   ["Who is eligible for a VA loan?", "Eligible veterans, active-duty service members, National Guard and Reserve members, and some surviving spouses can use a VA loan. We can request your Certificate of Eligibility (COE) for you."],
+   ["Do VA loans require mortgage insurance?", "No. VA loans have no monthly mortgage insurance. Most borrowers pay a one-time VA funding fee, which can be financed into the loan. Veterans who receive VA disability compensation are generally exempt."],
+   ["Can I use a VA loan more than once?", "Yes. VA entitlement can be restored after you sell and pay off a VA loan, and some veterans have enough remaining entitlement to buy again while keeping their current home."],
+   ["Can I build a home with a VA loan?", "Yes. We offer VA construction-to-permanent financing, so eligible veterans can finance the lot and the build in one loan with one closing."]
+  ],
+  "/loans/usda-loans/": [
+   ["Where can I use a USDA loan in Florida?", "USDA loans are for homes in eligible rural and suburban areas. Many areas outside city centers in Marion, Levy, Citrus and surrounding counties qualify. We can check any address for you."],
+   ["Are there income limits for USDA loans?", "Yes. Total household income has to be at or below the USDA limit for your county and household size. We'll check your eligibility before you start shopping."],
+   ["Does a USDA loan have mortgage insurance?", "USDA loans have an upfront guarantee fee, which can be financed, and a small annual fee paid monthly. Both are usually lower than FHA mortgage insurance."],
+   ["Can I buy a new construction home with a USDA loan?", "Yes. USDA financing works for existing homes, new construction from a builder, and USDA construction-to-permanent loans."]
+  ],
+  "/loans/30-year-fixed-mortgage/": [
+   ["Why choose a 30-year fixed mortgage?", "Your interest rate and principal and interest payment stay the same for the life of the loan, and spreading payments over 30 years keeps the monthly payment lower than a shorter-term loan."],
+   ["Can I pay off a 30-year mortgage early?", "Yes. Most of our 30-year fixed loans have no prepayment penalty, so you can make extra principal payments whenever you want and cut years of interest."],
+   ["When does PMI go away on a conventional loan?", "On a conventional loan you can ask to remove private mortgage insurance once you reach 20% equity based on the original value, and it is removed automatically at 22%, as long as your payments are current."]
+  ],
+  "/loans/15-year-fixed-mortgage/": [
+   ["Is a 15-year or 30-year mortgage better?", "A 15-year loan usually has a lower rate and costs far less interest over the life of the loan, but the monthly payment is higher. A 30-year loan keeps the payment lower. We'll show you both side by side."],
+   ["Can I refinance into a 15-year mortgage?", "Yes. Many homeowners refinance from a 30-year to a 15-year loan to pay off their home sooner. We'll compare the new payment and the interest you'd save."],
+   ["Can I get a 15-year FHA or VA loan?", "Yes. FHA, VA and conventional loans are all available with 15-year fixed terms."]
+  ],
+  "/loans/adjustable-rate-mortgage/": [
+   ["How does an adjustable-rate mortgage work?", "An ARM has a fixed rate for an initial period, commonly 5, 7 or 10 years. After that the rate adjusts on a set schedule based on a market index plus a margin."],
+   ["Is there a limit on how much my rate can go up?", "Yes. ARMs have caps that limit how much the rate can change at the first adjustment, at each adjustment after that, and over the life of the loan. We'll walk you through the caps on any ARM we quote."],
+   ["Who should consider an ARM?", "An ARM can make sense if you plan to sell or refinance before the fixed period ends, or if you want a lower starting rate and are comfortable with a payment that can change later."]
+  ],
+  "/loans/construction-loans/": [
+   ["What is a construction-to-permanent loan?", "It is one loan that pays for building your home and then converts to a regular mortgage when construction is finished, with one application and one closing."],
+   ["Which loan types can I use to build?", "We offer FHA, VA, USDA and conventional construction-to-permanent loans, for primary residences, second homes and investment properties."],
+   ["I'm self-employed. Can I get a construction loan?", "Yes. We offer construction financing for self-employed borrowers that uses bank statement deposits to qualify instead of tax returns."],
+   ["Can I use land I already own?", "Yes. Equity in a lot you already own can often count toward your down payment on the construction loan."]
+  ],
+  "/loans/lot-and-land-loans/": [
+   ["Can I finance land and build later?", "Yes. A lot loan lets you buy the land now. When you're ready to build, the lot can be rolled into a construction-to-permanent loan."],
+   ["How are land loans different from home loans?", "Land loans usually need a larger down payment and have shorter terms than a home mortgage, because there's no house on the property yet. Terms depend on whether the land is a ready-to-build lot or raw acreage."],
+   ["Do you lend on acreage in Marion County?", "Yes. We finance lots and acreage in Marion County and across Florida. Call us with the parcel and we'll tell you which options fit."]
+  ],
+  "/loans/down-payment-assistance/": [
+   ["What down payment assistance is available in Florida?", "Options include the Florida Hometown Heroes program and county SHIP programs, such as Marion County SHIP, when funding is available. Each program has its own income, purchase price and buyer requirements."],
+   ["Do I have to be a first-time buyer?", "Most Florida assistance programs are for first-time buyers, which usually means you haven't owned a home in the past three years. Some programs make exceptions. We'll check which ones you qualify for."],
+   ["Does down payment assistance have to be repaid?", "It depends on the program. Many are deferred second mortgages that are repaid when you sell, refinance or pay off your first mortgage, and some are forgiven over time."]
+  ],
+  "/loans/jumbo-loans/": [
+   ["What is a jumbo loan?", "A jumbo loan is a mortgage above the conforming loan limit that the FHFA sets each year. It is used for higher-priced homes and luxury properties."],
+   ["Can I use a jumbo loan for a second home or investment property?", "Yes. Jumbo financing is available for primary residences, second homes and, in some cases, investment properties."],
+   ["What does it take to qualify for a jumbo loan?", "Jumbo loans generally look for stronger credit, more cash reserves and documented income. We'll review your situation and tell you what you'll need."]
+  ],
+  "/loans/203k-loans/": [
+   ["What is an FHA 203(k) loan?", "It is an FHA loan that combines the purchase of a home, or a refinance, with the cost of repairs or renovations, so you can finance both in one loan."],
+   ["What is the difference between a Limited and a Standard 203(k)?", "A Limited 203(k) covers non-structural repairs and updates up to HUD's cost cap. A Standard 203(k) covers larger projects, including structural work, and requires a HUD consultant."],
+   ["Who does the renovation work?", "Licensed contractors you choose do the work. The repair funds are held in escrow and released to them in stages as the work is completed."]
+  ],
+  "/loans/reverse-mortgage/": [
+   ["Who qualifies for a reverse mortgage?", "Homeowners 62 and older with significant equity who live in the home as their primary residence. Counseling with a HUD-approved counselor is required before you apply."],
+   ["Do I still own my home with a reverse mortgage?", "Yes. You keep the title to your home. You must keep paying property taxes and homeowners insurance and keep the home in good repair."],
+   ["Do I have to make monthly mortgage payments?", "No monthly mortgage payment is required. The loan is repaid when the last borrower sells the home, moves out permanently or passes away. You can still make payments if you choose."]
+  ],
+  "/loans/manufactured-home-financing/": [
+   ["What types of manufactured homes can be financed?", "Homes built after June 15, 1976 to HUD code, on a permanent foundation, on land you own or are buying with the home. Single-wide and multi-wide homes can qualify."],
+   ["Which loan programs work for manufactured homes?", "FHA, VA, USDA and conventional loans can all be used for qualifying manufactured homes."],
+   ["Can I buy the land and the home together?", "Yes. You can finance the land and the home in one loan, including a new home that is being delivered and set on your lot."]
+  ]
+ }
+}
