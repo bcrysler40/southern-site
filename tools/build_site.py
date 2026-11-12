@@ -412,6 +412,126 @@ def render_contact(p):
 </div></section>""" + reviews()
     return doc(p, main)
 
+
+# ---------------------------------------------------------------- builder landing page
+SE_STATES = ["Florida", "Georgia", "Alabama", "South Carolina", "North Carolina", "Tennessee", "Mississippi"]
+
+BUILDER_FAQ = [
+ ("How much does a forward commitment cost?",
+  "The cost depends on the rate you choose, the size of the pool and your buyers' credit profile. We price it against your expected closings so you only reserve what you're likely to use, and it usually costs less per sale than one-off buydowns or deep price cuts."),
+ ("Does the forward commitment count toward FHA's 6% seller concession limit?",
+  "No. The forward commitment does not count toward FHA's 6% seller concession limit. You can still contribute up to an additional 6% in seller concessions for your buyer."),
+ ("How long does a commitment last?",
+  "Commitment windows are set to match your build and close schedule. We review your pipeline and recommend a window that fits your next phase or your spec inventory."),
+ ("Which loan types qualify?",
+  "The Builder Advantage rate is available on 30-year fixed FHA, VA, USDA and conventional loans. Ask about construction-to-permanent options for buyers who need something different."),
+ ("Do you work with builders outside Florida?",
+  "Yes. The Builder Advantage Program is a nationwide program. We're based in Ocala, Florida, and we work with builders across the Southeast, including Georgia, Alabama, South Carolina, North Carolina, Tennessee and Mississippi."),
+ ("Can I use it on spec and move-in-ready homes?",
+  "Yes. Any qualified buyer who finances with us and closes inside the commitment window gets the committed rate, so it works for spec inventory as well as homes still under construction."),
+ ("Do buyers have to finance with Southern Home Loans?",
+  "Yes. The committed rate is available to qualified buyers who finance with Southern Home Loans and close within the commitment window."),
+ ("What marketing support do you provide?",
+  "We supply co-branded flyers, social media ads and buyer payment comparisons your sales team can hand out in the model home or send to agents."),
+]
+
+def render_builder(p):
+    disclose = ("*Rate of 4.99% with 5.838% Annual Percentage Rate (APR) is for a 30-year fixed FHA purchase loan and is available only through a builder forward commitment "
+        "for qualified buyers who close within the commitment period. Rates, terms and availability are subject to change without notice and are not a commitment to lend. "
+        "All loans subject to credit approval, underwriting guidelines and property eligibility. FHA loans require an upfront and annual mortgage insurance premium. "
+        "Payment examples do not include taxes and insurance; actual payment will be higher. Southern Home Loans is a division of Luminate Bank, NMLS# 162096. Equal Housing Lender.")
+    crumbs = '<div class="crumbs"><a href="/">Home</a> / <a href="/builders/">For Builders</a> / Builder Advantage Program</div>'
+    hero = f"""<section class="hero hero-home on-dark" style="--hero-img:url('{HERO}')"><div class="wrap">
+  <div>{crumbs}
+    <span class="eyebrow">For home builders across the Southeast</span>
+    <h1>Sell new homes on payment, not price.</h1>
+    <p class="lead">The Builder Advantage Program is a forward commitment that gives every qualified buyer in your community a below-market rate: <b style="color:#fff">4.99% (5.838% APR)*</b> on a 30-year fixed FHA loan. You protect your price and your comps. Your buyers get a payment they can say yes to.</p>
+    <ul class="checks">
+      <li>Doesn't count toward FHA's 6% seller concessions. You can still contribute the full 6%.</li>
+      <li>Works with 30-year fixed FHA, VA, USDA and conventional loans</li>
+      <li>Buyers under contract keep the rate through construction</li>
+    </ul>
+    <div class="btns"><a class="btn btn-teal" href="#quote" onclick="return goQuote()">Get my builder analysis</a><a class="btn btn-ghost" href="tel:{PHONE_TEL}">{ICON['phone']} Call {PHONE}</a></div>
+    <div class="trust" style="margin-top:26px"><span><b>Marion County's 2 largest builders</b> already enrolled</span><span><b>Luminate Bank</b> · NMLS# {NMLS}</span></div>
+  </div>
+  {quote_form("Get your free builder rate analysis", "Tell us where you build, your price points and your expected closings. Brandon will send back a commitment proposal and a buyer payment comparison. No obligation.", apply=False)}
+</div></section>"""
+    strip_ = f"""<section class="strip"><div class="wrap">
+  <div class="stat"><div class="badge">{ICON['home']}</div><div><div class="n">$443/mo</div><div class="t">lower P&amp;I for your buyer on a $350K home**</div></div></div>
+  <div class="stat"><div class="badge">{ICON['shield']}</div><div><div class="n">~$68K</div><div class="t">price cut you'd need to match that payment at 7%**</div></div></div>
+  <div class="stat"><div class="badge">{ICON['spark']}</div><div><div class="n">+6%</div><div class="t">seller concessions still available on FHA</div></div></div>
+  <div class="stat"><div class="badge">{ICON['phone']}</div><div><div class="n">1 lender</div><div class="t">direct line to the branch manager, not a call center</div></div></div>
+</div></section>"""
+    compare = """<section class="s"><div class="wrap">
+  <div class="s-head"><span class="eyebrow">Why a forward commitment</span><h2>Three ways to hit your buyer's payment</h2><p>When rates squeeze affordability, most builders cut price or pay for one-off buydowns. A forward commitment gets the same payment for less, without touching your list price.</p></div>
+  <div class="compare">
+    <div class="opt"><h3>Price reduction</h3><p class="big">~$68,000</p><p class="cap">off a $350K list price to match the payment**</p><ul><li>Resets the comps for every home in the community</li><li>Lowers appraisals for future sales</li><li>Gives away margin you can't get back</li></ul></div>
+    <div class="opt"><h3>One-off buydown</h3><p class="big">Per buyer</p><p class="cap">paid sale by sale, out of seller concessions</p><ul><li>Uses up the buyer's concession room</li><li>Has to be repriced as rates move</li><li>Hard to advertise one consistent payment</li></ul></div>
+    <div class="opt win"><span class="tag">Builder Advantage</span><h3>Forward commitment</h3><p class="big">A fraction</p><p class="cap">pooled pricing across your expected closings</p><ul><li>List prices and comps stay intact</li><li>Doesn't count toward FHA's 6% concession limit</li><li>One low rate you can put on every sign and listing</li></ul></div>
+  </div>
+</div></section>"""
+    steps = """<section class="s alt"><div class="wrap">
+  <div class="s-head"><span class="eyebrow">How it works</span><h2>Live in your community in three steps</h2></div>
+  <div class="steps">
+    <div class="step"><h3>Reserve your rate</h3><p>We size a commitment to your realistic closings over the next build cycle. Pricing depends on the rate you choose and your buyers' credit profile.</p></div>
+    <div class="step"><h3>Market the payment</h3><p>Put the rate on your signs, listings and model-home materials. We supply co-branded flyers, social ads and payment comparisons.</p></div>
+    <div class="step"><h3>Close with confidence</h3><p>Buyers under contract keep the rate through construction. One lender, one process, predictable closings.</p></div>
+  </div>
+</div></section>"""
+    benefits = [("Protect your comps", "Keep list prices intact so appraisals in your community hold their value."),
+                ("Qualify more buyers", "A lower payment improves debt-to-income and opens your homes to buyers priced out at market rates."),
+                ("Spend less per sale", "Pooled pricing usually costs less per buyer than one-off buydowns or deep price reductions."),
+                ("Move spec inventory", "A move-in-ready home with a locked low rate creates real urgency."),
+                ("Reduce fallout", "Buyers aren't exposed to rate swings while their home is under construction."),
+                ("Work with one lender", "One point of contact and a direct line to the branch manager, not a call center.")]
+    ben = "".join(f'<div class="feat"><h3>{esc(t)}</h3><p>{esc(d)}</p></div>' for t, d in benefits)
+    benefits_html = f"""<section class="s"><div class="wrap">
+  <div class="s-head"><span class="eyebrow">Builder benefits</span><h2>More buyers. Fewer price cuts.</h2></div>
+  <div class="feats">{ben}</div>
+</div></section>"""
+    example = f"""<section class="s dark on-dark"><div class="wrap split">
+  <div><span class="eyebrow">What it means for your buyer</span><h2>Same $350,000 home. $443 less a month.</h2>
+    <p>FHA with 3.5% down. Your buyer saves about $5,324 a year and $26,618 over five years, and you never touch the list price.</p>
+    <table class="pay"><tbody>
+      <tr><th></th><th>Market rate</th><th>Builder Advantage</th></tr>
+      <tr><td>Interest rate</td><td>7.00%</td><td><b>4.99%*</b></td></tr>
+      <tr><td>Loan amount (incl. UFMIP)</td><td>$343,661</td><td>$343,661</td></tr>
+      <tr><td>Monthly principal &amp; interest</td><td>$2,286</td><td><b>$1,843</b></td></tr>
+    </tbody></table>
+    <a class="btn btn-teal" style="margin-top:22px" href="#quote" onclick="return goQuote()">Run the numbers on my homes</a></div>
+  <div><img src="/wp-content/uploads/2026/11/builder-advantage-350k-new-home-payment-768x646.jpg" alt="New construction home listed at $350,000 showing a $1,843 monthly payment with the Builder Advantage rate versus $2,286 at market rate" width="768" height="646" loading="lazy"></div>
+</div></section>"""
+    states = "".join(f'<span class="chip">{s}</span>' for s in SE_STATES)
+    region = f"""<section class="s"><div class="wrap split">
+  <div><span class="eyebrow">Where we work</span><h2>Built for builders across the Southeast</h2>
+    <p>Southern Home Loans is based in Ocala, Florida, and is a division of Luminate Bank. The Builder Advantage Program is nationwide, and we work directly with production, semi-custom and spec builders throughout the Southeast.</p>
+    <p>It's a strong fit if you have an active community or spec inventory, buyers who are stalling on payment, or you're tired of cutting price to close.</p>
+    <div class="chips" style="justify-content:flex-start;margin:22px 0 0">{states}</div></div>
+  <div class="side-card"><div class="lo"><img src="{BRANDON}" alt="Brandon Crysler" width="64" height="64"><div><b>Brandon Crysler</b><span>Branch Manager · NMLS# {NMLS}</span></div></div>
+    <h3 style="margin-top:20px">Let's run the numbers on your next phase.</h3>
+    <p>Tell me your price points and expected closings, and I'll build a commitment and a payment comparison you can hand straight to your sales team.</p>
+    <a class="btn btn-teal" href="#quote" onclick="return goQuote()">Get my builder analysis</a>
+    <a class="ph-line" href="tel:{PHONE_TEL}">{ICON['phone']} {PHONE}</a>
+    <a class="ph-line" style="font-size:.95rem" href="mailto:{EMAIL}">{ICON['mail']} {EMAIL}</a></div>
+</div></section>"""
+    faq = "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in BUILDER_FAQ)
+    faq_html = f"""<section class="s alt"><div class="wrap">
+  <div class="s-head"><span class="eyebrow">Builder FAQs</span><h2>Questions builders ask us</h2></div>
+  <div class="faq">{faq}</div>
+</div></section>"""
+    fine = f"""<section class="s tight"><div class="wrap"><div class="fine">
+  <p>{esc(disclose)}</p>
+  <p>**Illustration only. Assumes $350,000 purchase price, 3.5% down payment, 1.75% upfront mortgage insurance premium financed, 30-year fixed term, 7.00% market rate for comparison. Principal and interest only; taxes, insurance and monthly mortgage insurance not included. Price-reduction figure is the approximate price cut needed to reach the same principal and interest payment at 7.00%.</p>
+</div></div></section>"""
+    band = """<section class="s tight"><div class="wrap"><div class="cta-band">
+  <div><h2>Ready to sell on payment?</h2><p>Get a free commitment proposal and buyer payment comparison for your community.</p></div>
+  <div class="btns"><a class="btn btn-teal" href="#quote" onclick="return goQuote()">Get my builder analysis</a><a class="btn btn-ghost" href="tel:""" + PHONE_TEL + f"""">{ICON['phone']} {PHONE}</a></div>
+</div></div></section>"""
+    revs = f"""<section class="s alt"><div class="wrap"><div class="s-head"><span class="eyebrow">Reviews</span><h2>What your buyers can expect</h2><p>Reviews from homebuyers who closed with Brandon and the Southern Home Loans team.</p></div>
+<div class="reviews"><div class="{ELFSIGHT}" data-elfsight-app-lazy></div></div></div></section>"""
+    main = hero + strip_ + compare + steps + benefits_html + example + region + faq_html + revs + band + fine
+    return doc(p, main)
+
 # ---------------------------------------------------------------- build
 def build():
     if os.path.isdir(OUT):
@@ -433,6 +553,8 @@ def build():
             d = render_loans(p)
         elif k == "contact":
             d = render_contact(p)
+        elif k == "builder":
+            d = render_builder(p)
         elif k == "loan":
             d = render_content(p, crumbs=[("Home", "/"), ("Loan options", "/loans/"), (titlecase(p["hero"].get("eyebrow") or p["h1"]), "")], side_current=p["url"])
         elif k == "area":
