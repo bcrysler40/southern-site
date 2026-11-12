@@ -240,7 +240,8 @@ def footer(apply=True):
   </div>
   <div class="legal">
     <img src="/wp-content/uploads/2022/05/equalhousing_bw_lg.svg" alt="Equal Housing Opportunity" width="34" height="34">
-    <span>© {year} Southern Home Loans, a division of Luminate Bank</span>
+    <img class="fdic" src="/wp-content/uploads/2026/11/member-fdic.svg" alt="Member FDIC" width="80" height="29">
+    <span>© {year} Southern Home Loans, a division of Luminate Bank · Luminate Bank NMLS# 1281698 · Member FDIC</span>
     <a href="https://www.nmlsconsumeraccess.org/" target="_blank" rel="noopener">NMLS Consumer Access</a>
     <a href="/licensing/">Licensing</a><a href="/cip-disclosure/">CIP Disclosure</a><a href="/privacy-policy/">Privacy Policy</a><a href="/disclaimer/">Disclaimer</a>
   </div>

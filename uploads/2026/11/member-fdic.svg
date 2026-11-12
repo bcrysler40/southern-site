@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 44" role="img" aria-label="Member FDIC">
+  <rect x="1" y="1" width="118" height="42" rx="4" fill="none" stroke="#fff" stroke-width="2"/>
+  <text x="11" y="29" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#fff">Member</text>
+  <text x="61" y="31" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="700" fill="#fff" letter-spacing="1">FDIC</text>
+</svg>

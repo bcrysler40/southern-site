@@ -220,6 +220,7 @@ footer.site ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
 .social a:hover{background:var(--teal)}
 .legal{border-top:1px solid rgba(255,255,255,.1);margin-top:50px;padding:24px 0 30px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;font-size:.83rem}
 .legal img{height:34px;width:auto;filter:invert(1);opacity:.75}
+.legal img.fdic{height:29px;filter:none;opacity:.85}
 .disclaim{font-size:.78rem;color:#7f89a8;padding-bottom:30px;line-height:1.55}
 
 /* responsive */
