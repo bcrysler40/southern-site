@@ -63,7 +63,7 @@
   },
   "/loans/reverse-mortgage/": {
    "title": "Reverse Mortgage (HECM) in Florida | Southern Home Loans",
-   "description": "Florida homeowners 62 and older can turn home equity into cash with an FHA-insured reverse mortgage (HECM). Learn how it works and what's required."
+   "description": "Florida homeowners 62 and older (55 and older with certain programs) can turn home equity into cash with a reverse mortgage. Learn how it works."
   },
   "/loans/manufactured-home-financing/": {
    "title": "Manufactured Home Loans in Florida | Southern Home Loans",
@@ -291,7 +291,7 @@
   "/loans/reverse-mortgage/": [
    [
     "Who qualifies for a reverse mortgage?",
-    "Homeowners 62 and older with significant equity who live in the home as their primary residence. Counseling with a HUD-approved counselor is required before you apply."
+    "Homeowners 62 and older qualify for the FHA-insured reverse mortgage (HECM), and certain other reverse mortgage programs are available starting at age 55. You need significant equity and must live in the home as your primary residence. Counseling with a HUD-approved counselor is required for an FHA reverse mortgage."
    ],
    [
     "Do I still own my home with a reverse mortgage?",
