@@ -111,77 +111,210 @@
   },
   "/congress-just-passed-a-game-changing-housing-bill/": {
    "description": "What the new federal housing bill means for Marion County home buyers, Realtors and builders, and how it could affect your next purchase."
+  },
+  "/service-areas/gainesville/": {
+   "title": "Gainesville, FL Mortgage Lender | Southern Home Loans",
+   "description": "Home loans for Gainesville and Alachua County buyers: FHA, VA, USDA, conventional, construction and DSCR loans, plus options for UF parents. Get pre-approved."
   }
  },
  "faqs": {
   "/loans/fha-loans/": [
-   ["Who is an FHA loan a good fit for?", "FHA loans are insured by the Federal Housing Administration, so lenders can offer a low down payment and more flexible credit guidelines than most conventional loans. They are popular with first-time buyers and with buyers who are rebuilding their credit."],
-   ["Do FHA loans have mortgage insurance?", "Yes. FHA loans carry an upfront mortgage insurance premium, which is usually financed into the loan, and an annual premium that is paid monthly. We'll show you exactly what it adds to your payment before you apply."],
-   ["Can I use down payment assistance with an FHA loan?", "Often, yes. Florida programs such as Hometown Heroes and county SHIP programs can be paired with an FHA first mortgage when funds are available and you meet the program's income and purchase price limits."],
-   ["Is there a maximum FHA loan amount?", "FHA sets loan limits by county each year. We'll confirm the current limit for the Florida county you're buying in when we pre-approve you."]
+   [
+    "Who is an FHA loan a good fit for?",
+    "FHA loans are insured by the Federal Housing Administration, so lenders can offer a low down payment and more flexible credit guidelines than most conventional loans. They are popular with first-time buyers and with buyers who are rebuilding their credit."
+   ],
+   [
+    "Do FHA loans have mortgage insurance?",
+    "Yes. FHA loans carry an upfront mortgage insurance premium, which is usually financed into the loan, and an annual premium that is paid monthly. We'll show you exactly what it adds to your payment before you apply."
+   ],
+   [
+    "Can I use down payment assistance with an FHA loan?",
+    "Often, yes. Florida programs such as Hometown Heroes and county SHIP programs can be paired with an FHA first mortgage when funds are available and you meet the program's income and purchase price limits."
+   ],
+   [
+    "Is there a maximum FHA loan amount?",
+    "FHA sets loan limits by county each year. We'll confirm the current limit for the Florida county you're buying in when we pre-approve you."
+   ]
   ],
   "/loans/va-loans/": [
-   ["Who is eligible for a VA loan?", "Eligible veterans, active-duty service members, National Guard and Reserve members, and some surviving spouses can use a VA loan. We can request your Certificate of Eligibility (COE) for you."],
-   ["Do VA loans require mortgage insurance?", "No. VA loans have no monthly mortgage insurance. Most borrowers pay a one-time VA funding fee, which can be financed into the loan. Veterans who receive VA disability compensation are generally exempt."],
-   ["Can I use a VA loan more than once?", "Yes. VA entitlement can be restored after you sell and pay off a VA loan, and some veterans have enough remaining entitlement to buy again while keeping their current home."],
-   ["Can I build a home with a VA loan?", "Yes. We offer VA construction-to-permanent financing, so eligible veterans can finance the lot and the build in one loan with one closing."]
+   [
+    "Who is eligible for a VA loan?",
+    "Eligible veterans, active-duty service members, National Guard and Reserve members, and some surviving spouses can use a VA loan. We can request your Certificate of Eligibility (COE) for you."
+   ],
+   [
+    "Do VA loans require mortgage insurance?",
+    "No. VA loans have no monthly mortgage insurance. Most borrowers pay a one-time VA funding fee, which can be financed into the loan. Veterans who receive VA disability compensation are generally exempt."
+   ],
+   [
+    "Can I use a VA loan more than once?",
+    "Yes. VA entitlement can be restored after you sell and pay off a VA loan, and some veterans have enough remaining entitlement to buy again while keeping their current home."
+   ],
+   [
+    "Can I build a home with a VA loan?",
+    "Yes. We offer VA construction-to-permanent financing, so eligible veterans can finance the lot and the build in one loan with one closing."
+   ]
   ],
   "/loans/usda-loans/": [
-   ["Where can I use a USDA loan in Florida?", "USDA loans are for homes in eligible rural and suburban areas. Many areas outside city centers in Marion, Levy, Citrus and surrounding counties qualify. We can check any address for you."],
-   ["Are there income limits for USDA loans?", "Yes. Total household income has to be at or below the USDA limit for your county and household size. We'll check your eligibility before you start shopping."],
-   ["Does a USDA loan have mortgage insurance?", "USDA loans have an upfront guarantee fee, which can be financed, and a small annual fee paid monthly. Both are usually lower than FHA mortgage insurance."],
-   ["Can I buy a new construction home with a USDA loan?", "Yes. USDA financing works for existing homes, new construction from a builder, and USDA construction-to-permanent loans."]
+   [
+    "Where can I use a USDA loan in Florida?",
+    "USDA loans are for homes in eligible rural and suburban areas. Many areas outside city centers in Marion, Levy, Citrus and surrounding counties qualify. We can check any address for you."
+   ],
+   [
+    "Are there income limits for USDA loans?",
+    "Yes. Total household income has to be at or below the USDA limit for your county and household size. We'll check your eligibility before you start shopping."
+   ],
+   [
+    "Does a USDA loan have mortgage insurance?",
+    "USDA loans have an upfront guarantee fee, which can be financed, and a small annual fee paid monthly. Both are usually lower than FHA mortgage insurance."
+   ],
+   [
+    "Can I buy a new construction home with a USDA loan?",
+    "Yes. USDA financing works for existing homes, new construction from a builder, and USDA construction-to-permanent loans."
+   ]
   ],
   "/loans/30-year-fixed-mortgage/": [
-   ["Why choose a 30-year fixed mortgage?", "Your interest rate and principal and interest payment stay the same for the life of the loan, and spreading payments over 30 years keeps the monthly payment lower than a shorter-term loan."],
-   ["Can I pay off a 30-year mortgage early?", "Yes. Most of our 30-year fixed loans have no prepayment penalty, so you can make extra principal payments whenever you want and cut years of interest."],
-   ["When does PMI go away on a conventional loan?", "On a conventional loan you can ask to remove private mortgage insurance once you reach 20% equity based on the original value, and it is removed automatically at 22%, as long as your payments are current."]
+   [
+    "Why choose a 30-year fixed mortgage?",
+    "Your interest rate and principal and interest payment stay the same for the life of the loan, and spreading payments over 30 years keeps the monthly payment lower than a shorter-term loan."
+   ],
+   [
+    "Can I pay off a 30-year mortgage early?",
+    "Yes. Most of our 30-year fixed loans have no prepayment penalty, so you can make extra principal payments whenever you want and cut years of interest."
+   ],
+   [
+    "When does PMI go away on a conventional loan?",
+    "On a conventional loan you can ask to remove private mortgage insurance once you reach 20% equity based on the original value, and it is removed automatically at 22%, as long as your payments are current."
+   ]
   ],
   "/loans/15-year-fixed-mortgage/": [
-   ["Is a 15-year or 30-year mortgage better?", "A 15-year loan usually has a lower rate and costs far less interest over the life of the loan, but the monthly payment is higher. A 30-year loan keeps the payment lower. We'll show you both side by side."],
-   ["Can I refinance into a 15-year mortgage?", "Yes. Many homeowners refinance from a 30-year to a 15-year loan to pay off their home sooner. We'll compare the new payment and the interest you'd save."],
-   ["Can I get a 15-year FHA or VA loan?", "Yes. FHA, VA and conventional loans are all available with 15-year fixed terms."]
+   [
+    "Is a 15-year or 30-year mortgage better?",
+    "A 15-year loan usually has a lower rate and costs far less interest over the life of the loan, but the monthly payment is higher. A 30-year loan keeps the payment lower. We'll show you both side by side."
+   ],
+   [
+    "Can I refinance into a 15-year mortgage?",
+    "Yes. Many homeowners refinance from a 30-year to a 15-year loan to pay off their home sooner. We'll compare the new payment and the interest you'd save."
+   ],
+   [
+    "Can I get a 15-year FHA or VA loan?",
+    "Yes. FHA, VA and conventional loans are all available with 15-year fixed terms."
+   ]
   ],
   "/loans/adjustable-rate-mortgage/": [
-   ["How does an adjustable-rate mortgage work?", "An ARM has a fixed rate for an initial period, commonly 5, 7 or 10 years. After that the rate adjusts on a set schedule based on a market index plus a margin."],
-   ["Is there a limit on how much my rate can go up?", "Yes. ARMs have caps that limit how much the rate can change at the first adjustment, at each adjustment after that, and over the life of the loan. We'll walk you through the caps on any ARM we quote."],
-   ["Who should consider an ARM?", "An ARM can make sense if you plan to sell or refinance before the fixed period ends, or if you want a lower starting rate and are comfortable with a payment that can change later."]
+   [
+    "How does an adjustable-rate mortgage work?",
+    "An ARM has a fixed rate for an initial period, commonly 5, 7 or 10 years. After that the rate adjusts on a set schedule based on a market index plus a margin."
+   ],
+   [
+    "Is there a limit on how much my rate can go up?",
+    "Yes. ARMs have caps that limit how much the rate can change at the first adjustment, at each adjustment after that, and over the life of the loan. We'll walk you through the caps on any ARM we quote."
+   ],
+   [
+    "Who should consider an ARM?",
+    "An ARM can make sense if you plan to sell or refinance before the fixed period ends, or if you want a lower starting rate and are comfortable with a payment that can change later."
+   ]
   ],
   "/loans/construction-loans/": [
-   ["What is a construction-to-permanent loan?", "It is one loan that pays for building your home and then converts to a regular mortgage when construction is finished, with one application and one closing."],
-   ["Which loan types can I use to build?", "We offer FHA, VA, USDA and conventional construction-to-permanent loans, for primary residences, second homes and investment properties."],
-   ["I'm self-employed. Can I get a construction loan?", "Yes. We offer construction financing for self-employed borrowers that uses bank statement deposits to qualify instead of tax returns."],
-   ["Can I use land I already own?", "Yes. Equity in a lot you already own can often count toward your down payment on the construction loan."]
+   [
+    "What is a construction-to-permanent loan?",
+    "It is one loan that pays for building your home and then converts to a regular mortgage when construction is finished, with one application and one closing."
+   ],
+   [
+    "Which loan types can I use to build?",
+    "We offer FHA, VA, USDA and conventional construction-to-permanent loans, for primary residences, second homes and investment properties."
+   ],
+   [
+    "I'm self-employed. Can I get a construction loan?",
+    "Yes. We offer construction financing for self-employed borrowers that uses bank statement deposits to qualify instead of tax returns."
+   ],
+   [
+    "Can I use land I already own?",
+    "Yes. Equity in a lot you already own can often count toward your down payment on the construction loan."
+   ]
   ],
   "/loans/lot-and-land-loans/": [
-   ["Can I finance land and build later?", "Yes. A lot loan lets you buy the land now. When you're ready to build, the lot can be rolled into a construction-to-permanent loan."],
-   ["How are land loans different from home loans?", "Land loans usually need a larger down payment and have shorter terms than a home mortgage, because there's no house on the property yet. Terms depend on whether the land is a ready-to-build lot or raw acreage."],
-   ["Do you lend on acreage in Marion County?", "Yes. We finance lots and acreage in Marion County and across Florida. Call us with the parcel and we'll tell you which options fit."]
+   [
+    "Can I finance land and build later?",
+    "Yes. A lot loan lets you buy the land now. When you're ready to build, the lot can be rolled into a construction-to-permanent loan."
+   ],
+   [
+    "How are land loans different from home loans?",
+    "Land loans usually need a larger down payment and have shorter terms than a home mortgage, because there's no house on the property yet. Terms depend on whether the land is a ready-to-build lot or raw acreage."
+   ],
+   [
+    "Do you lend on acreage in Marion County?",
+    "Yes. We finance lots and acreage in Marion County and across Florida. Call us with the parcel and we'll tell you which options fit."
+   ]
   ],
   "/loans/down-payment-assistance/": [
-   ["What down payment assistance is available in Florida?", "Options include the Florida Hometown Heroes program and county SHIP programs, such as Marion County SHIP, when funding is available. Each program has its own income, purchase price and buyer requirements."],
-   ["Do I have to be a first-time buyer?", "Most Florida assistance programs are for first-time buyers, which usually means you haven't owned a home in the past three years. Some programs make exceptions. We'll check which ones you qualify for."],
-   ["Does down payment assistance have to be repaid?", "It depends on the program. Many are deferred second mortgages that are repaid when you sell, refinance or pay off your first mortgage, and some are forgiven over time."]
+   [
+    "What down payment assistance is available in Florida?",
+    "Options include the Florida Hometown Heroes program and county SHIP programs, such as Marion County SHIP, when funding is available. Each program has its own income, purchase price and buyer requirements."
+   ],
+   [
+    "Do I have to be a first-time buyer?",
+    "Most Florida assistance programs are for first-time buyers, which usually means you haven't owned a home in the past three years. Some programs make exceptions. We'll check which ones you qualify for."
+   ],
+   [
+    "Does down payment assistance have to be repaid?",
+    "It depends on the program. Many are deferred second mortgages that are repaid when you sell, refinance or pay off your first mortgage, and some are forgiven over time."
+   ]
   ],
   "/loans/jumbo-loans/": [
-   ["What is a jumbo loan?", "A jumbo loan is a mortgage above the conforming loan limit that the FHFA sets each year. It is used for higher-priced homes and luxury properties."],
-   ["Can I use a jumbo loan for a second home or investment property?", "Yes. Jumbo financing is available for primary residences, second homes and, in some cases, investment properties."],
-   ["What does it take to qualify for a jumbo loan?", "Jumbo loans generally look for stronger credit, more cash reserves and documented income. We'll review your situation and tell you what you'll need."]
+   [
+    "What is a jumbo loan?",
+    "A jumbo loan is a mortgage above the conforming loan limit that the FHFA sets each year. It is used for higher-priced homes and luxury properties."
+   ],
+   [
+    "Can I use a jumbo loan for a second home or investment property?",
+    "Yes. Jumbo financing is available for primary residences, second homes and, in some cases, investment properties."
+   ],
+   [
+    "What does it take to qualify for a jumbo loan?",
+    "Jumbo loans generally look for stronger credit, more cash reserves and documented income. We'll review your situation and tell you what you'll need."
+   ]
   ],
   "/loans/203k-loans/": [
-   ["What is an FHA 203(k) loan?", "It is an FHA loan that combines the purchase of a home, or a refinance, with the cost of repairs or renovations, so you can finance both in one loan."],
-   ["What is the difference between a Limited and a Standard 203(k)?", "A Limited 203(k) covers non-structural repairs and updates up to HUD's cost cap. A Standard 203(k) covers larger projects, including structural work, and requires a HUD consultant."],
-   ["Who does the renovation work?", "Licensed contractors you choose do the work. The repair funds are held in escrow and released to them in stages as the work is completed."]
+   [
+    "What is an FHA 203(k) loan?",
+    "It is an FHA loan that combines the purchase of a home, or a refinance, with the cost of repairs or renovations, so you can finance both in one loan."
+   ],
+   [
+    "What is the difference between a Limited and a Standard 203(k)?",
+    "A Limited 203(k) covers non-structural repairs and updates up to HUD's cost cap. A Standard 203(k) covers larger projects, including structural work, and requires a HUD consultant."
+   ],
+   [
+    "Who does the renovation work?",
+    "Licensed contractors you choose do the work. The repair funds are held in escrow and released to them in stages as the work is completed."
+   ]
   ],
   "/loans/reverse-mortgage/": [
-   ["Who qualifies for a reverse mortgage?", "Homeowners 62 and older with significant equity who live in the home as their primary residence. Counseling with a HUD-approved counselor is required before you apply."],
-   ["Do I still own my home with a reverse mortgage?", "Yes. You keep the title to your home. You must keep paying property taxes and homeowners insurance and keep the home in good repair."],
-   ["Do I have to make monthly mortgage payments?", "No monthly mortgage payment is required. The loan is repaid when the last borrower sells the home, moves out permanently or passes away. You can still make payments if you choose."]
+   [
+    "Who qualifies for a reverse mortgage?",
+    "Homeowners 62 and older with significant equity who live in the home as their primary residence. Counseling with a HUD-approved counselor is required before you apply."
+   ],
+   [
+    "Do I still own my home with a reverse mortgage?",
+    "Yes. You keep the title to your home. You must keep paying property taxes and homeowners insurance and keep the home in good repair."
+   ],
+   [
+    "Do I have to make monthly mortgage payments?",
+    "No monthly mortgage payment is required. The loan is repaid when the last borrower sells the home, moves out permanently or passes away. You can still make payments if you choose."
+   ]
   ],
   "/loans/manufactured-home-financing/": [
-   ["What types of manufactured homes can be financed?", "Homes built after June 15, 1976 to HUD code, on a permanent foundation, on land you own or are buying with the home. Single-wide and multi-wide homes can qualify."],
-   ["Which loan programs work for manufactured homes?", "FHA, VA, USDA and conventional loans can all be used for qualifying manufactured homes."],
-   ["Can I buy the land and the home together?", "Yes. You can finance the land and the home in one loan, including a new home that is being delivered and set on your lot."]
+   [
+    "What types of manufactured homes can be financed?",
+    "Homes built after June 15, 1976 to HUD code, on a permanent foundation, on land you own or are buying with the home. Single-wide and multi-wide homes can qualify."
+   ],
+   [
+    "Which loan programs work for manufactured homes?",
+    "FHA, VA, USDA and conventional loans can all be used for qualifying manufactured homes."
+   ],
+   [
+    "Can I buy the land and the home together?",
+    "Yes. You can finance the land and the home in one loan, including a new home that is being delivered and set on your lot."
+   ]
   ]
  }
 }
