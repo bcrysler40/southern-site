@@ -23,7 +23,7 @@
   },
   "/loans/construction-loans/": {
    "title": "Construction Loans in Florida | One-Time Close | Southern Home Loans",
-   "description": "Build your home with an FHA, VA, USDA or conventional construction-to-permanent loan. Options for primary, second and investment homes across Florida."
+   "description": "Build with a VA, FHA or conventional construction-to-permanent loan, or renovate with FHA and conventional renovation loans. Serving all of Florida."
   },
   "/loans/30-year-fixed-mortgage/": {
    "title": "30-Year Fixed Mortgage in Florida | Southern Home Loans",
@@ -221,7 +221,7 @@
    ],
    [
     "Which loan types can I use to build?",
-    "We offer FHA, VA, USDA and conventional construction-to-permanent loans, for primary residences, second homes and investment properties."
+    "We offer VA, FHA and conventional construction-to-permanent loans. We also offer construction financing for second homes and investment properties."
    ],
    [
     "I'm self-employed. Can I get a construction loan?",
@@ -229,7 +229,11 @@
    ],
    [
     "Can I use land I already own?",
-    "Yes. Equity in a lot you already own can often count toward your down payment on the construction loan."
+    "Yes. Land you owned before you applied for your loan can be used as the down payment on your construction loan."
+   ],
+   [
+    "Do you offer renovation loans?",
+    "Yes. We offer renovation loans with conventional and FHA financing, so you can finance a home and its repairs or improvements in one loan."
    ]
   ],
   "/loans/lot-and-land-loans/": [
