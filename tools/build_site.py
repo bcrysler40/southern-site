@@ -26,6 +26,16 @@ GOOGLE_MAPS = f"https://www.google.com/maps/place/?q=place_id:{GOOGLE_PLACE_ID}"
 GOOGLE_WRITE_REVIEW = f"https://search.google.com/local/writereview?placeid={GOOGLE_PLACE_ID}"
 # Builder Advantage advertised rate - the APR must appear wherever the rate does (Reg Z 1026.24(c))
 BUILDER_RATE, BUILDER_APR = "4.99%", "5.838%"
+MAP_URL = "https://builderratespecial.com/"
+MAP_PAGES = {"/loans/builder-advantage-program/", "/builders/", "/service-areas/ocala/", "/service-areas/crystal-river/",
+             "/service-areas/inverness/", "/loans/fha-loans/", "/loans/va-loans/", "/moving-to-marion-county-fl/"}
+
+def map_callout():
+    return (f'<div class="block map-cta"><span class="eyebrow">Builder Rate Special</span><h3>See every 4.99% home on the map</h3>'
+            f'<p>Browse move-in ready new homes in Ocala, Marion County and Citrus County that qualify for the {BUILDER_RATE} builder rate '
+            f'({BUILDER_APR} APR)*, with an estimated payment for each home.</p>'
+            f'<a class="btn btn-teal" href="{MAP_URL}" target="_blank" rel="noopener">Browse eligible homes</a></div>')
+
 BUILDER_NOTE = (f"*Builder Advantage: {BUILDER_RATE} interest rate, {BUILDER_APR} Annual Percentage Rate (APR), "
     "on a fixed-rate FHA purchase loan available only through a builder forward commitment on select new homes, "
     "for qualified buyers who close within the commitment period. Rates, terms and availability are subject to change "
@@ -200,7 +210,7 @@ def header(apply=True):
     <div><button aria-haspopup="true">Buying a Home {ICON['down']}</button><div class="mega sm">
       <a href="/mortgage-process/">The Mortgage Process</a><a href="/purchase-process/">The Purchase Process</a>
       <a href="/mortgage-terms/">Mortgage Terms</a><a href="/moving-to-marion-county-fl/">Moving to Marion County</a>
-      <a href="/service-areas/ocala/">Ocala Home Loans</a><a href="/builders/">For Builders</a></div></div>
+      <a href="/service-areas/ocala/">Ocala Home Loans</a><a href="{MAP_URL}" target="_blank" rel="noopener">4.99% Homes Map</a><a href="/builders/">For Builders</a></div></div>
     <div><a href="/about/">About</a></div>
     <div><a href="/blog/">Blog</a></div>
     <div><a href="/contact/">Contact</a></div>
@@ -216,7 +226,7 @@ def header(apply=True):
   <a href="/" style="border:0;padding-top:4px"><img src="{LOGO}" alt="Southern Home Loans" style="height:40px;width:auto"></a>
   <div class="btns" style="margin:22px 0 6px">{f'<a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a>' if apply else ''}<a class="btn btn-line" href="tel:{PHONE_TEL}">Call</a></div>
   <h4>Loan options</h4>{drawer_loans}<a href="/portfolio-products/">Portfolio Products (Investors)</a><a href="/loans/">All loan options</a>
-  <h4>Buying a home</h4><a href="/mortgage-process/">The Mortgage Process</a><a href="/purchase-process/">The Purchase Process</a><a href="/mortgage-terms/">Mortgage Terms</a><a href="/moving-to-marion-county-fl/">Moving to Marion County</a><a href="/service-areas/ocala/">Ocala Home Loans</a><a href="/builders/">For Builders</a>
+  <h4>Buying a home</h4><a href="/mortgage-process/">The Mortgage Process</a><a href="/purchase-process/">The Purchase Process</a><a href="/mortgage-terms/">Mortgage Terms</a><a href="/moving-to-marion-county-fl/">Moving to Marion County</a><a href="/service-areas/ocala/">Ocala Home Loans</a><a href="{MAP_URL}" target="_blank" rel="noopener">4.99% Homes Map</a><a href="/builders/">For Builders</a>
   <h4>Company</h4><a href="/about/">About</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a>
 </div></div>
 <div class="actionbar" aria-label="Quick actions">
@@ -412,7 +422,7 @@ def render_home(p):
     loans = f"""<section class="s"><div class="wrap">
   <div class="s-head"><span class="eyebrow">Loan options</span><h2>Find the right loan for your move</h2><p>Whether it's your first home, a new build, land, or an investment property, we'll match you with the program that fits.</p></div>
   {loan_cards(limit=9)}
-  <div class="center" style="margin-top:34px"><a class="btn btn-navy" href="/loans/">See all loan options</a></div>
+  <div class="center btns" style="margin-top:34px;justify-content:center"><a class="btn btn-navy" href="/loans/">See all loan options</a><a class="btn btn-teal" href="{MAP_URL}" target="_blank" rel="noopener">See 4.99% homes on the map</a></div>
 </div></section>"""
     steps = f"""<section class="s alt"><div class="wrap">
   <div class="s-head"><span class="eyebrow">How it works</span><h2>From pre-approval to keys in hand</h2><p>We've streamlined the process so you always know what's next.</p></div>
@@ -450,7 +460,7 @@ def render_content(p, crumbs=None, side_current="", show_grid_title="Explore loa
     if p.get("url") in DOWNLOADS:
         guide = f'<div class="block guide-dl"><h3>Free guide: How do construction loans work?</h3><p>From the first draw to your finished home — see how draws, interest-only payments and construction-to-permanent financing work.</p>{download_btn(p["url"], "btn btn-navy")}</div>'
     main = page_hero(p, crumbs=crumbs, apply=ap) + f"""<section class="s"><div class="wrap content-grid">
-  <div class="prose content">{guide}{body}{faq}<div style="margin-top:44px">{quote_form(apply=ap)}</div></div>
+  <div class="prose content">{guide}{map_callout() if p.get("url") in MAP_PAGES else ""}{body}{faq}<div style="margin-top:44px">{quote_form(apply=ap)}</div></div>
   {sidebar(side_current, apply=ap)}
 </div></section>""" + grid_html + reviews() + band
     return doc(p, main)
