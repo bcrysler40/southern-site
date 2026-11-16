@@ -173,6 +173,16 @@ def loan_menu():
     return items + '<a class="all" href="/loans/">View all loan options →</a>'
 
 NO_APPLY = {"/loans/builder-advantage-program/"}   # pages with no Apply Now buttons
+# downloadable guides: page url -> (button label, file under uploads/)
+DOWNLOADS = {"/loans/construction-loans/": ("Construction Loan Guide (PDF)", "/wp-content/uploads/2026/11/How-Do-Construction-Loans-Work.pdf")}
+
+def download_btn(url, cls="btn btn-line"):
+    if url not in DOWNLOADS:
+        return ""
+    label, href = DOWNLOADS[url]
+    return f'<a class="{cls}" href="{href}" target="_blank" rel="noopener">{ICON_DL} {esc(label)}</a>'
+
+ICON_DL = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>' 
 
 def header(apply=True):
     social = "".join(f'<a href="{u}" target="_blank" rel="noopener" aria-label="{n}">{ICON[{"Facebook":"fb","Instagram":"ig","LinkedIn":"li"}[n]]}</a>' for n, u in SOCIAL)
@@ -328,7 +338,7 @@ def page_hero(p, eyebrow=None, lead=None, image=None, buttons=True, crumbs=None,
     img_html = f'<div class="hero-img"><img src="{image}" alt="{esc(strip(p.get('h1','')))}" fetchpriority="high"></div>' if image else ""
     apply_btn = f'<a class="btn btn-teal" href="{APPLY}" target="_blank" rel="noopener">Apply Now</a>' if apply else ''
     btns = f"""<div class="btns" style="margin-top:26px">{apply_btn}
-<a class="btn btn-ghost" href="#quote" onclick="return goQuote()">Get a Free Quote</a></div>""" if buttons else ""
+<a class="btn btn-ghost" href="#quote" onclick="return goQuote()">Get a Free Quote</a>{download_btn(p.get("url"), "btn btn-ghost")}</div>""" if buttons else ""
     cr = ""
     if crumbs:
         cr = '<div class="crumbs">' + " / ".join(f'<a href="{u}">{esc(t)}</a>' if u else esc(t) for t, u in crumbs) + "</div>"
@@ -436,8 +446,11 @@ def render_content(p, crumbs=None, side_current="", show_grid_title="Explore loa
     if p.get("faqs"):
         faq = '<div class="block faq"><h2>Frequently asked questions</h2>' + "".join(
             f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in p["faqs"]) + "</div>"
+    guide = ""
+    if p.get("url") in DOWNLOADS:
+        guide = f'<div class="block guide-dl"><h3>Free guide: How do construction loans work?</h3><p>From the first draw to your finished home — see how draws, interest-only payments and construction-to-permanent financing work.</p>{download_btn(p["url"], "btn btn-navy")}</div>'
     main = page_hero(p, crumbs=crumbs, apply=ap) + f"""<section class="s"><div class="wrap content-grid">
-  <div class="prose content">{body}{faq}<div style="margin-top:44px">{quote_form(apply=ap)}</div></div>
+  <div class="prose content">{guide}{body}{faq}<div style="margin-top:44px">{quote_form(apply=ap)}</div></div>
   {sidebar(side_current, apply=ap)}
 </div></section>""" + grid_html + reviews() + band
     return doc(p, main)

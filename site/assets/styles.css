@@ -255,3 +255,4 @@ footer.site ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
   .stat .n{font-size:1.2rem}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.guide-dl{background:var(--teal-l);border:1px solid var(--line);border-left:4px solid var(--teal,#17C7C4);border-radius:12px;padding:22px 24px}.guide-dl h3{margin:0 0 6px}.guide-dl p{margin:0 0 14px}.btn svg{vertical-align:-3px}
