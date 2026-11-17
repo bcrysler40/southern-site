@@ -4687,5 +4687,107 @@
   "date": "2026-11-12",
   "modified": "2026-11-12",
   "category": "Education"
+ },
+ {
+  "url": "/service-areas/orlando/",
+  "title": "Orlando, FL Mortgage Lender | Southern Home Loans",
+  "description": "Orlando home loans: FHA, VA, conventional, jumbo, new construction, DSCR and investor loans across Orange, Seminole and Osceola counties. Get pre-approved.",
+  "canonical": "https://southernhl.com/service-areas/orlando/",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "meta": [
+   "<meta content=\"en_US\" property=\"og:locale\"/>",
+   "<meta content=\"website\" property=\"og:type\"/>",
+   "<meta content=\"Southern Home Loans | Luminate Bank\" property=\"og:site_name\"/>"
+  ],
+  "jsonld": [
+   "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Place\",\"@id\":\"https://southernhl.com/#place\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"2050 E Silver Springs Blvd\",\"addressLocality\":\"Ocala\",\"addressRegion\":\"FL\",\"postalCode\":\"34470\",\"addressCountry\":\"United States\"}},{\"@type\":[\"FinancialService\",\"Organization\"],\"@id\":\"https://southernhl.com/#organization\",\"name\":\"Southern Home Loans\",\"url\":\"https://southernhl.com\",\"sameAs\":[\"https://www.facebook.com/TeamSHL/\",\"https://twitter.com/https://twitter.com/SouthernHL\"],\"email\":\"bc@southernhl.co\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"2050 E Silver Springs Blvd\",\"addressLocality\":\"Ocala\",\"addressRegion\":\"FL\",\"postalCode\":\"34470\",\"addressCountry\":\"United States\"},\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://southernhl.com/#logo\",\"url\":\"https://southernhl.com/wp-content/uploads/2023/11/SHL-Square.png\",\"contentUrl\":\"https://southernhl.com/wp-content/uploads/2023/11/SHL-Square.png\",\"caption\":\"Southern Home Loans | Luminate Bank\",\"inLanguage\":\"en-US\",\"width\":\"2000\",\"height\":\"2000\"},\"openingHours\":[\"Mo,Tu,We,Th,Fr,Sa,Su 09:00-17:00\"],\"description\":\"Southern Home Loans, a division of Luminate Bank (NMLS# 1281698), is a mortgage lender based in Ocala, Florida, serving homebuyers and homeowners across Florida with FHA, VA, USDA, conventional, construction-to-permanent, reverse mortgage, and down payment assistance loans.\",\"location\":{\"@id\":\"https://southernhl.com/#place\"},\"image\":{\"@id\":\"https://southernhl.com/#logo\"},\"telephone\":\"+1-352-622-1521\"},{\"@type\":\"WebSite\",\"@id\":\"https://southernhl.com/#website\",\"url\":\"https://southernhl.com\",\"name\":\"Southern Home Loans | Luminate Bank\",\"publisher\":{\"@id\":\"https://southernhl.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://southernhl.com/service-areas/orlando/#webpage\",\"url\":\"https://southernhl.com/service-areas/orlando/\",\"name\":\"Orlando, FL Mortgage Lender | Southern Home Loans\",\"description\":\"Orlando home loans: FHA, VA, conventional, jumbo, new construction, DSCR and investor loans across Orange, Seminole and Osceola counties. Get pre-approved.\",\"isPartOf\":{\"@id\":\"https://southernhl.com/#website\"},\"about\":{\"@id\":\"https://southernhl.com/#organization\"},\"inLanguage\":\"en-US\",\"spatialCoverage\":{\"@type\":\"City\",\"name\":\"Orlando\",\"containedInPlace\":{\"@type\":\"AdministrativeArea\",\"name\":\"Orange County, Florida\"}}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://southernhl.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Service areas\",\"item\":\"https://southernhl.com/service-areas/mortgages-and-fha-loans-in-florida/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Orlando\",\"item\":\"https://southernhl.com/service-areas/orlando/\"}]}]}"
+  ],
+  "image": "/wp-content/uploads/2026/01/home-for-sale-loan.jpg",
+  "kind": "area",
+  "hero": {
+   "h1": "Orlando Mortgage Lender: Home Loans in Orlando & Central Florida",
+   "eyebrow": "Orlando Mortgage Loans",
+   "lead": "Get pre-approved to buy in Orlando, Winter Park, Lake Nona or anywhere in Orange, Seminole and Osceola counties, with a Florida lender you can call directly.",
+   "image": "/wp-content/uploads/2026/01/home-for-sale-loan.jpg",
+   "buttons": [
+    {
+     "text": "352-622-1521",
+     "href": "tel:352-622-1521"
+    }
+   ]
+  },
+  "h1": "Orlando Mortgage Lender: Home Loans in Orlando & Central Florida",
+  "sections": [
+   "<h2>Home loans for Orlando and Central Florida</h2><p>Southern Home Loans is a Florida mortgage lender based in Ocala, and we have helped Florida families finance homes since 2000. Orlando buyers get a loan officer they can reach directly, fast pre-approvals and a team that knows Central Florida's new-construction, condo and investor markets.</p>\n<p>We lend throughout Orange, Seminole, Osceola and Lake counties, including Winter Park, Lake Nona, Dr. Phillips, College Park, Baldwin Park, Windermere, Winter Garden, Kissimmee, St. Cloud, Apopka, Oviedo, Sanford and Clermont.</p>\n<h3>Buying new construction around Orlando</h3><p>Central Florida is one of the busiest new-home markets in the country. Ask about builder incentives and our <a href=\"/loans/builder-advantage-program/\">Builder Advantage forward commitments</a>, or build on your own lot with a <a href=\"/loans/construction-loans/\">one-time-close construction loan</a>.</p>\n<h3>Investors and vacation rentals</h3><p>Orlando's theme parks and convention business make it a magnet for rental investors. Our <a href=\"/portfolio-products/\">investment property loans</a> and <a href=\"/portfolio-products/\">DSCR loans</a> let you qualify on the property's rental income, and our expanded portfolio programs allow non-warrantable condos and condotels.</p>\n<h3>Healthcare, UCF and first-time buyers</h3><p>Doctors joining Orlando's hospital systems or Lake Nona's medical city can use our <a href=\"/portfolio-products/\">medical doctor loan</a>. Parents of UCF students can buy near campus instead of paying rent. First-time buyers can combine <a href=\"/loans/fha-loans/\">FHA</a>, <a href=\"/loans/30-year-fixed-mortgage/\">conventional</a> or HomeReady financing with <a href=\"/loans/down-payment-assistance/\">down payment assistance</a> such as Luminate Path and Florida Hometown Heroes.</p>\n<h3>Loans we offer Orlando buyers</h3><ul><li><a href=\"/loans/fha-loans/\">FHA</a>, <a href=\"/loans/va-loans/\">VA</a> and <a href=\"/loans/usda-loans/\">USDA loans</a> (USDA in eligible areas on the edges of the metro)</li><li><a href=\"/loans/30-year-fixed-mortgage/\">Conventional</a>, <a href=\"/loans/jumbo-loans/\">jumbo</a> and <a href=\"/portfolio-products/\">second home loans</a></li><li>Buy-before-you-sell options and the Power Buyer cash offer program</li><li><a href=\"/loans/reverse-mortgage/\">Reverse mortgages</a> for homeowners 62 and older</li></ul><h3>How to get started</h3><p>Apply online in minutes or call Brandon at <a href=\"tel:+13526221521\">352-622-1521</a>. We'll review your options, give you a clear pre-approval to shop with, and stay in touch with you, your agent and your title company all the way to closing.</p>"
+  ],
+  "modified": "2026-11-17"
+ },
+ {
+  "url": "/service-areas/jacksonville/",
+  "title": "Jacksonville, FL Mortgage Lender | Southern Home Loans",
+  "description": "Jacksonville home loans: VA loans with no lender overlays, FHA, USDA, conventional, jumbo, construction and DSCR loans across Northeast Florida.",
+  "canonical": "https://southernhl.com/service-areas/jacksonville/",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "meta": [
+   "<meta content=\"en_US\" property=\"og:locale\"/>",
+   "<meta content=\"website\" property=\"og:type\"/>",
+   "<meta content=\"Southern Home Loans | Luminate Bank\" property=\"og:site_name\"/>"
+  ],
+  "jsonld": [
+   "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Place\",\"@id\":\"https://southernhl.com/#place\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"2050 E Silver Springs Blvd\",\"addressLocality\":\"Ocala\",\"addressRegion\":\"FL\",\"postalCode\":\"34470\",\"addressCountry\":\"United States\"}},{\"@type\":[\"FinancialService\",\"Organization\"],\"@id\":\"https://southernhl.com/#organization\",\"name\":\"Southern Home Loans\",\"url\":\"https://southernhl.com\",\"sameAs\":[\"https://www.facebook.com/TeamSHL/\",\"https://twitter.com/https://twitter.com/SouthernHL\"],\"email\":\"bc@southernhl.co\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"2050 E Silver Springs Blvd\",\"addressLocality\":\"Ocala\",\"addressRegion\":\"FL\",\"postalCode\":\"34470\",\"addressCountry\":\"United States\"},\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://southernhl.com/#logo\",\"url\":\"https://southernhl.com/wp-content/uploads/2023/11/SHL-Square.png\",\"contentUrl\":\"https://southernhl.com/wp-content/uploads/2023/11/SHL-Square.png\",\"caption\":\"Southern Home Loans | Luminate Bank\",\"inLanguage\":\"en-US\",\"width\":\"2000\",\"height\":\"2000\"},\"openingHours\":[\"Mo,Tu,We,Th,Fr,Sa,Su 09:00-17:00\"],\"description\":\"Southern Home Loans, a division of Luminate Bank (NMLS# 1281698), is a mortgage lender based in Ocala, Florida, serving homebuyers and homeowners across Florida with FHA, VA, USDA, conventional, construction-to-permanent, reverse mortgage, and down payment assistance loans.\",\"location\":{\"@id\":\"https://southernhl.com/#place\"},\"image\":{\"@id\":\"https://southernhl.com/#logo\"},\"telephone\":\"+1-352-622-1521\"},{\"@type\":\"WebSite\",\"@id\":\"https://southernhl.com/#website\",\"url\":\"https://southernhl.com\",\"name\":\"Southern Home Loans | Luminate Bank\",\"publisher\":{\"@id\":\"https://southernhl.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://southernhl.com/service-areas/jacksonville/#webpage\",\"url\":\"https://southernhl.com/service-areas/jacksonville/\",\"name\":\"Jacksonville, FL Mortgage Lender | Southern Home Loans\",\"description\":\"Jacksonville home loans: VA loans with no lender overlays, FHA, USDA, conventional, jumbo, construction and DSCR loans across Northeast Florida.\",\"isPartOf\":{\"@id\":\"https://southernhl.com/#website\"},\"about\":{\"@id\":\"https://southernhl.com/#organization\"},\"inLanguage\":\"en-US\",\"spatialCoverage\":{\"@type\":\"City\",\"name\":\"Jacksonville\",\"containedInPlace\":{\"@type\":\"AdministrativeArea\",\"name\":\"Duval County, Florida\"}}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://southernhl.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Service areas\",\"item\":\"https://southernhl.com/service-areas/mortgages-and-fha-loans-in-florida/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Jacksonville\",\"item\":\"https://southernhl.com/service-areas/jacksonville/\"}]}]}"
+  ],
+  "image": "/wp-content/uploads/2024/06/house-for-sale.jpg",
+  "kind": "area",
+  "hero": {
+   "h1": "Jacksonville Mortgage Lender: Home Loans in Jacksonville & Northeast Florida",
+   "eyebrow": "Jacksonville Mortgage Loans",
+   "lead": "Get pre-approved to buy in Jacksonville, the Beaches, Mandarin or anywhere in Duval, Clay, Nassau and St. Johns counties.",
+   "image": "/wp-content/uploads/2024/06/house-for-sale.jpg",
+   "buttons": [
+    {
+     "text": "352-622-1521",
+     "href": "tel:352-622-1521"
+    }
+   ]
+  },
+  "h1": "Jacksonville Mortgage Lender: Home Loans in Jacksonville & Northeast Florida",
+  "sections": [
+   "<h2>Home loans for Jacksonville and Northeast Florida</h2><p>Southern Home Loans is a Florida mortgage lender based in Ocala, and we have helped Florida families finance homes since 2000. Jacksonville buyers get a loan officer they can call directly, fast pre-approvals and straightforward advice from first conversation to closing.</p>\n<p>Jacksonville covers more land than any other city in the continental United States, so we lend across the whole region: Riverside, Avondale, San Marco, Mandarin, Southside, Arlington, the Beaches (Atlantic, Neptune and Jacksonville Beach), Orange Park, Fleming Island, Oakleaf, Yulee, Fernandina Beach and Nocatee.</p>\n<h3>VA loans for Jacksonville's military families</h3><p>With NAS Jacksonville, Naval Station Mayport and nearby Kings Bay, Jacksonville is one of Florida's biggest military communities. Veterans and service members can use <a href=\"/loans/va-loans/\">VA loans</a> with no monthly mortgage insurance, and our VA lending has no lender overlays. Relocating on PCS orders? We can pre-approve you before you arrive.</p>\n<h3>Healthcare, logistics and first-time buyers</h3><p>Physicians at Jacksonville's major hospitals and medical centers can use our <a href=\"/portfolio-products/\">medical doctor loan</a>, where student loan debt isn't an issue. First-time buyers can pair <a href=\"/loans/fha-loans/\">FHA</a>, <a href=\"/loans/30-year-fixed-mortgage/\">conventional</a> or HomeReady loans with <a href=\"/loans/down-payment-assistance/\">down payment assistance</a>.</p>\n<h3>Loans we offer Jacksonville buyers</h3><ul><li><a href=\"/loans/usda-loans/\">USDA loans</a> for eligible areas in Clay, Nassau and outlying Duval County</li><li><a href=\"/loans/jumbo-loans/\">Jumbo loans</a> up to $3 million for Ponte Vedra and beach homes</li><li><a href=\"/loans/construction-loans/\">One-time-close construction</a> and <a href=\"/loans/lot-and-land-loans/\">land loans</a></li><li><a href=\"/portfolio-products/\">Investment property</a> and <a href=\"/portfolio-products/\">DSCR loans</a> for rental investors</li><li><a href=\"/loans/203k-loans/\">Renovation loans</a> for historic homes in Riverside, Avondale and Springfield</li><li><a href=\"/loans/reverse-mortgage/\">Reverse mortgages</a> for homeowners 62 and older</li></ul><h3>How to get started</h3><p>Apply online in minutes or call Brandon at <a href=\"tel:+13526221521\">352-622-1521</a>. We'll review your options, give you a clear pre-approval to shop with, and stay in touch with you, your agent and your title company all the way to closing.</p>"
+  ],
+  "modified": "2026-11-17"
+ },
+ {
+  "url": "/service-areas/st-augustine/",
+  "title": "St. Augustine, FL Mortgage Lender | Southern Home Loans",
+  "description": "St. Augustine home loans: second home, jumbo, renovation, FHA, VA, conventional and DSCR loans across St. Johns County. Get pre-approved today.",
+  "canonical": "https://southernhl.com/service-areas/st-augustine/",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "meta": [
+   "<meta content=\"en_US\" property=\"og:locale\"/>",
+   "<meta content=\"website\" property=\"og:type\"/>",
+   "<meta content=\"Southern Home Loans | Luminate Bank\" property=\"og:site_name\"/>"
+  ],
+  "jsonld": [
+   "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Place\",\"@id\":\"https://southernhl.com/#place\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"2050 E Silver Springs Blvd\",\"addressLocality\":\"Ocala\",\"addressRegion\":\"FL\",\"postalCode\":\"34470\",\"addressCountry\":\"United States\"}},{\"@type\":[\"FinancialService\",\"Organization\"],\"@id\":\"https://southernhl.com/#organization\",\"name\":\"Southern Home Loans\",\"url\":\"https://southernhl.com\",\"sameAs\":[\"https://www.facebook.com/TeamSHL/\",\"https://twitter.com/https://twitter.com/SouthernHL\"],\"email\":\"bc@southernhl.co\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"2050 E Silver Springs Blvd\",\"addressLocality\":\"Ocala\",\"addressRegion\":\"FL\",\"postalCode\":\"34470\",\"addressCountry\":\"United States\"},\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://southernhl.com/#logo\",\"url\":\"https://southernhl.com/wp-content/uploads/2023/11/SHL-Square.png\",\"contentUrl\":\"https://southernhl.com/wp-content/uploads/2023/11/SHL-Square.png\",\"caption\":\"Southern Home Loans | Luminate Bank\",\"inLanguage\":\"en-US\",\"width\":\"2000\",\"height\":\"2000\"},\"openingHours\":[\"Mo,Tu,We,Th,Fr,Sa,Su 09:00-17:00\"],\"description\":\"Southern Home Loans, a division of Luminate Bank (NMLS# 1281698), is a mortgage lender based in Ocala, Florida, serving homebuyers and homeowners across Florida with FHA, VA, USDA, conventional, construction-to-permanent, reverse mortgage, and down payment assistance loans.\",\"location\":{\"@id\":\"https://southernhl.com/#place\"},\"image\":{\"@id\":\"https://southernhl.com/#logo\"},\"telephone\":\"+1-352-622-1521\"},{\"@type\":\"WebSite\",\"@id\":\"https://southernhl.com/#website\",\"url\":\"https://southernhl.com\",\"name\":\"Southern Home Loans | Luminate Bank\",\"publisher\":{\"@id\":\"https://southernhl.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://southernhl.com/service-areas/st-augustine/#webpage\",\"url\":\"https://southernhl.com/service-areas/st-augustine/\",\"name\":\"St. Augustine, FL Mortgage Lender | Southern Home Loans\",\"description\":\"St. Augustine home loans: second home, jumbo, renovation, FHA, VA, conventional and DSCR loans across St. Johns County. Get pre-approved today.\",\"isPartOf\":{\"@id\":\"https://southernhl.com/#website\"},\"about\":{\"@id\":\"https://southernhl.com/#organization\"},\"inLanguage\":\"en-US\",\"spatialCoverage\":{\"@type\":\"City\",\"name\":\"St. Augustine\",\"containedInPlace\":{\"@type\":\"AdministrativeArea\",\"name\":\"St. Johns County, Florida\"}}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://southernhl.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Service areas\",\"item\":\"https://southernhl.com/service-areas/mortgages-and-fha-loans-in-florida/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"St. Augustine\",\"item\":\"https://southernhl.com/service-areas/st-augustine/\"}]}]}"
+  ],
+  "image": "/wp-content/uploads/2025/03/newly-builthome.jpg",
+  "kind": "area",
+  "hero": {
+   "h1": "St. Augustine Mortgage Lender: Home Loans in St. Augustine & St. Johns County",
+   "eyebrow": "St. Augustine Mortgage Loans",
+   "lead": "Get pre-approved to buy in St. Augustine, St. Augustine Beach, Nocatee, World Golf Village or anywhere in St. Johns County.",
+   "image": "/wp-content/uploads/2025/03/newly-builthome.jpg",
+   "buttons": [
+    {
+     "text": "352-622-1521",
+     "href": "tel:352-622-1521"
+    }
+   ]
+  },
+  "h1": "St. Augustine Mortgage Lender: Home Loans in St. Augustine & St. Johns County",
+  "sections": [
+   "<h2>Home loans for St. Augustine and St. Johns County</h2><p>Southern Home Loans is a Florida mortgage lender based in Ocala, and we have helped Florida families finance homes since 2000. Whether you're buying a primary home, a beach getaway or a historic house downtown, you'll work directly with a loan officer who answers the phone.</p>\n<p>We lend throughout St. Johns County, including historic downtown St. Augustine, Anastasia Island, St. Augustine Beach, Vilano Beach, Crescent Beach, World Golf Village, Nocatee, Ponte Vedra, St. Johns and Hastings, plus nearby Palm Coast in Flagler County.</p>\n<h3>Second homes and beach properties</h3><p>The nation's oldest city and its beaches draw second home buyers from across the country. Our <a href=\"/portfolio-products/\">second home loans</a> include portfolio financing up to $1.5 million with no mortgage insurance, and <a href=\"/loans/jumbo-loans/\">jumbo loans</a> go up to $3 million. Coastal properties often require flood insurance, so we'll help you factor it into your payment early.</p>\n<h3>Historic and older homes</h3><p>Many homes in and around the historic district need updates. A <a href=\"/loans/203k-loans/\">renovation loan</a> or <a href=\"/loans/203k-loans/\">FHA 203(k)</a> lets you finance the purchase and the improvements together, based on the home's value after the work is done.</p>\n<h3>New construction in a fast-growing county</h3><p>St. Johns County is one of Florida's fastest-growing counties, with new communities from Nocatee to Shearwater and Beachwalk. Ask about builder incentives, our <a href=\"/loans/builder-advantage-program/\">Builder Advantage</a> program and <a href=\"/loans/construction-loans/\">one-time-close construction loans</a>.</p>\n<h3>Loans we offer St. Augustine buyers</h3><ul><li><a href=\"/loans/fha-loans/\">FHA</a>, <a href=\"/loans/va-loans/\">VA</a>, <a href=\"/loans/30-year-fixed-mortgage/\">conventional</a> and HomeReady loans</li><li><a href=\"/loans/usda-loans/\">USDA loans</a> for eligible rural areas such as Hastings and western St. Johns County</li><li><a href=\"/portfolio-products/\">Investment property</a> and <a href=\"/portfolio-products/\">DSCR loans</a> for vacation rental investors</li><li><a href=\"/loans/down-payment-assistance/\">Down payment assistance</a>, including Luminate Path with no first-time buyer requirement</li><li><a href=\"/loans/reverse-mortgage/\">Reverse mortgages</a> for homeowners 62 and older</li></ul><h3>How to get started</h3><p>Apply online in minutes or call Brandon at <a href=\"tel:+13526221521\">352-622-1521</a>. We'll review your options, give you a clear pre-approval to shop with, and stay in touch with you, your agent and your title company all the way to closing.</p>"
+  ],
+  "modified": "2026-11-17"
  }
 ]

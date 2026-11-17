@@ -115,6 +115,18 @@
   "/service-areas/gainesville/": {
    "title": "Gainesville, FL Mortgage Lender | Southern Home Loans",
    "description": "Home loans for Gainesville and Alachua County buyers: FHA, VA, USDA, conventional, construction and DSCR loans, plus options for UF parents. Get pre-approved."
+  },
+  "/service-areas/orlando/": {
+   "title": "Orlando, FL Mortgage Lender | Southern Home Loans",
+   "description": "Orlando home loans: FHA, VA, conventional, jumbo, new construction, DSCR and investor loans across Orange, Seminole and Osceola counties. Get pre-approved."
+  },
+  "/service-areas/jacksonville/": {
+   "title": "Jacksonville, FL Mortgage Lender | Southern Home Loans",
+   "description": "Jacksonville home loans: VA loans with no lender overlays, FHA, USDA, conventional, jumbo, construction and DSCR loans across Northeast Florida."
+  },
+  "/service-areas/st-augustine/": {
+   "title": "St. Augustine, FL Mortgage Lender | Southern Home Loans",
+   "description": "St. Augustine home loans: second home, jumbo, renovation, FHA, VA, conventional and DSCR loans across St. Johns County. Get pre-approved today."
   }
  },
  "faqs": {
@@ -372,6 +384,48 @@
    [
     "Do you work with builders outside Marion County?",
     "Yes. We work with builders across Florida, not just in Ocala, Marion County and Citrus County. Call us to talk about a commitment for your communities."
+   ]
+  ],
+  "/service-areas/orlando/": [
+   [
+    "Do you lend in Orlando if your office is in Ocala?",
+    "Yes. Southern Home Loans lends across all of Florida, including Orlando and Orange, Seminole, Osceola and Lake counties. Most of the process happens online and by phone."
+   ],
+   [
+    "Can I finance an Orlando vacation rental?",
+    "Yes. Investment property and DSCR loans can qualify you on the property's rental income, and our expanded programs allow non-warrantable condos and condotels."
+   ],
+   [
+    "Do you offer down payment assistance in Orlando?",
+    "Yes. Luminate Path has no first-time homebuyer requirement, and eligible buyers may also use Florida Hometown Heroes when funds are available."
+   ]
+  ],
+  "/service-areas/jacksonville/": [
+   [
+    "Do you offer VA loans in Jacksonville?",
+    "Yes. We offer VA loans with no lender overlays and no monthly mortgage insurance for eligible veterans and service members, including those stationed at NAS Jacksonville and Naval Station Mayport."
+   ],
+   [
+    "Which areas around Jacksonville do you serve?",
+    "All of Duval, Clay, Nassau and St. Johns counties, plus the rest of Florida."
+   ],
+   [
+    "Can I get a USDA loan near Jacksonville?",
+    "Many areas in Clay and Nassau counties and parts of outlying Duval County may be USDA-eligible. We'll check the exact address for you."
+   ]
+  ],
+  "/service-areas/st-augustine/": [
+   [
+    "Can I finance a second home in St. Augustine?",
+    "Yes. We offer conventional, jumbo and portfolio second home loans, including portfolio financing up to $1.5 million with no mortgage insurance."
+   ],
+   [
+    "Can I buy a historic home that needs work?",
+    "Yes. Renovation loans and FHA 203(k) loans can finance the purchase and the improvements together, based on the home's value after the work."
+   ],
+   [
+    "Do St. Augustine homes need flood insurance?",
+    "Homes in FEMA flood zones with a federally backed mortgage need flood insurance. We'll help you check the flood zone and include the cost in your payment estimate."
    ]
   ]
  }

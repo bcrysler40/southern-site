@@ -54,7 +54,8 @@ BY_URL = {p["url"]: p for p in PAGES}
 SEO = json.load(open(os.path.join(ROOT, "content", "seo.json")))
 AREAS = [("Ocala", "/service-areas/ocala/"), ("Gainesville", "/service-areas/gainesville/"), ("Crystal River", "/service-areas/crystal-river/"),
          ("Inverness", "/service-areas/inverness/"), ("Spring Hill", "/service-areas/spring-hill/"), ("Hernando", "/service-areas/hernando/"),
-         ("Levy County", "/service-areas/levy-county/"), ("All of Florida", "/service-areas/mortgages-and-fha-loans-in-florida/")]
+         ("Levy County", "/service-areas/levy-county/"), ("Orlando", "/service-areas/orlando/"),
+         ("Jacksonville", "/service-areas/jacksonville/"), ("St. Augustine", "/service-areas/st-augustine/"), ("All of Florida", "/service-areas/mortgages-and-fha-loans-in-florida/")]
 
 def _meta_set(meta, key, value):
     """Replace the content of an og:/twitter: tag (Yoast/RankMath output) or add it."""
