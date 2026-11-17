@@ -30,8 +30,8 @@
    "description": "Lock in a steady principal and interest payment for the life of your loan with a 30-year fixed mortgage from Southern Home Loans. Free quote in minutes."
   },
   "/loans/down-payment-assistance/": {
-   "title": "Florida Down Payment Assistance Programs | Southern Home Loans",
-   "description": "Get help with your down payment and closing costs through Florida Hometown Heroes, county SHIP programs and more. See which programs you qualify for."
+   "title": "Florida Down Payment Assistance 2026 | Southern Home Loans",
+   "description": "Compare Florida down payment assistance: Luminate Path, FL Assist, HFA PLUS, Hometown Heroes and SHIP. Some options don't require first-time buyer status."
   },
   "/loans/15-year-fixed-mortgage/": {
    "title": "15-Year Fixed Mortgage in Florida | Southern Home Loans",
@@ -249,15 +249,35 @@
   "/loans/down-payment-assistance/": [
    [
     "What down payment assistance is available in Florida?",
-    "Options include the Florida Hometown Heroes program and county SHIP programs, such as Marion County SHIP, when funding is available. Each program has its own income, purchase price and buyer requirements."
+    "Florida buyers can use Luminate Path from Luminate Bank, Florida Housing programs (FL Assist, FL HLP, HFA PLUS and Hometown Heroes) and county SHIP programs such as Marion County SHIP when funding is open. Southern Home Loans compares the options you qualify for side by side."
    ],
    [
-    "Do I have to be a first-time buyer?",
-    "Most Florida assistance programs are for first-time buyers, which usually means you haven't owned a home in the past three years. Some programs make exceptions. We'll check which ones you qualify for."
+    "Do I have to be a first-time buyer to get down payment assistance?",
+    "Not always. Luminate Path has no first-time buyer requirement. Florida Housing programs are for buyers who haven't owned a primary home in the past three years, but honorably discharged veterans are exempt."
    ],
    [
     "Does down payment assistance have to be repaid?",
-    "It depends on the program. Many are deferred second mortgages that are repaid when you sell, refinance or pay off your first mortgage, and some are forgiven over time."
+    "It depends on the program. Some are forgiven over time, such as HFA PLUS and the forgivable Luminate Path option. Others, like FL Assist and Hometown Heroes, are deferred until you sell, refinance or move out. FL HLP is repaid monthly."
+   ],
+   [
+    "Is Florida Hometown Heroes still available?",
+    "Hometown Heroes is funded one year at a time and often runs out within months. A new $50 million round opened on July 13, 2026. Call Southern Home Loans at 352-622-1521 for current availability, and ask about Luminate Path, which doesn't depend on state funding."
+   ],
+   [
+    "What credit score do I need for down payment assistance in Florida?",
+    "Florida Housing programs generally require at least a 640 credit score, and Marion County SHIP requires at least 580. Requirements for Luminate Path depend on the loan type. We'll check your options when you apply."
+   ],
+   [
+    "What are the income limits for down payment assistance in Florida?",
+    "Florida Housing and SHIP programs set income and purchase price limits by county and household size. Luminate Path has no income limits."
+   ],
+   [
+    "Can I combine down payment assistance programs?",
+    "You can use only one Florida Housing assistance program per loan, but some local programs, such as SHIP, may be added as an additional second loan. We'll tell you which combinations work for your purchase."
+   ],
+   [
+    "Can down payment assistance cover closing costs?",
+    "Yes. Most programs, including Luminate Path and the Florida Housing programs, can be used for the down payment, closing costs or both."
    ]
   ],
   "/loans/jumbo-loans/": [
