@@ -116,14 +116,6 @@
    "title": "Gainesville, FL Mortgage Lender | Southern Home Loans",
    "description": "Home loans for Gainesville and Alachua County buyers: FHA, VA, USDA, conventional, construction and DSCR loans, plus options for UF parents. Get pre-approved."
   },
-  "/loans/conventional-loans/": {
-   "title": "Conventional Home Loans in Florida | Southern Home Loans",
-   "description": "Conventional mortgages in Florida with credit scores from 620, flexible DTI and options for primary, second and investment homes. Get pre-approved in Ocala."
-  },
-  "/loans/homeready/": {
-   "title": "HomeReady Loans in Florida | Southern Home Loans",
-   "description": "Fannie Mae HomeReady loans in Florida: low down payment, reduced mortgage insurance and income limits by area. See if you qualify with Southern Home Loans."
-  },
   "/loans/home-renovation-loans/": {
    "title": "Home Renovation Loans in Florida | Southern Home Loans",
    "description": "Buy or refinance and renovate with one loan based on the home's after-repair value. Conventional renovation and FHA 203(k) loans from Southern Home Loans."
@@ -136,21 +128,13 @@
    "title": "Second Home Loans in Florida | Southern Home Loans",
    "description": "Florida second home and vacation home loans, including non-conforming portfolio loans up to $1.5M with no mortgage insurance. Talk with Southern Home Loans."
   },
-  "/loans/investment-property-loans/": {
-   "title": "Investment Property Loans in Florida | Southern Home Loans",
-   "description": "Florida rental and investment property loans: conventional, DSCR and portfolio financing up to $1.5M on 1–4 units with 5/6 and 7/6 SOFR ARMs."
-  },
-  "/loans/power-buyer/": {
-   "title": "Power Buyer Cash Offer Program | Southern Home Loans",
-   "description": "Turn your pre-approval into a cash offer with Luminate's Power Buyer program. Compete with cash buyers in Ocala and across Florida."
-  },
   "/loans/hobby-farm-loans-marion-county/": {
    "title": "Hobby Farm Loans in Marion County, FL | Southern Home Loans",
    "description": "Financing for hobby farms, horse properties and homes on acreage in Ocala and Marion County. Conventional, FHA, VA, USDA, land and construction loans."
   },
   "/loans/buy-before-you-sell/": {
-   "title": "Buy Before You Sell: Departing Residence Loans | SHL",
-   "description": "Buy your next Florida home before selling: remove your departing residence from DTI, tap equity for your down payment, loans up to $5M. Southern Home Loans."
+   "title": "Buy Before You Sell in Florida | Southern Home Loans",
+   "description": "Buy your next Florida home before you sell: make a cash offer with Power Buyer or remove your departing residence from DTI. Loans up to $5M."
   },
   "/service-areas/orlando/": {
    "title": "Orlando, FL Mortgage Lender | Southern Home Loans",
@@ -422,30 +406,6 @@
     "Yes. We work with builders across Florida, not just in Ocala, Marion County and Citrus County. Call us to talk about a commitment for your communities."
    ]
   ],
-  "/loans/conventional-loans/": [
-   [
-    "What credit score do I need for a conventional loan?",
-    "Southern Home Loans offers conventional loans with credit scores as low as 620. Higher scores usually mean a better rate and lower mortgage insurance."
-   ],
-   [
-    "Can I use a conventional loan for a second home or rental?",
-    "Yes. Conventional loans can finance a primary residence, a second home or an investment property, each with its own down payment and credit requirements."
-   ],
-   [
-    "Can I get rid of mortgage insurance on a conventional loan?",
-    "Yes. Private mortgage insurance on a conventional loan can be cancelled once you reach the required equity, either through payments or appreciation."
-   ]
-  ],
-  "/loans/homeready/": [
-   [
-    "What are the HomeReady income limits?",
-    "HomeReady income limits are set by area. In most areas your household income must be at or below 80% of the area median income. We'll check the limit for the address you're buying."
-   ],
-   [
-    "Is HomeReady only for first-time buyers?",
-    "No. HomeReady is available to first-time and repeat buyers. If all borrowers are first-time buyers, a short homebuyer education course is required."
-   ]
-  ],
   "/loans/home-renovation-loans/": [
    [
     "How is a renovation loan amount determined?",
@@ -478,16 +438,6 @@
    [
     "Is mortgage insurance required on a second home?",
     "Our portfolio second home loans do not require mortgage insurance."
-   ]
-  ],
-  "/loans/investment-property-loans/": [
-   [
-    "Can I finance a 2–4 unit property?",
-    "Yes. Our investment property financing covers 1–4 unit properties."
-   ],
-   [
-    "What is a DSCR loan?",
-    "A debt service coverage ratio (DSCR) loan qualifies you based on the property's rental income compared with its housing payment, instead of your personal income documents."
    ]
   ],
   "/loans/hobby-farm-loans-marion-county/": [
@@ -530,6 +480,10 @@
    [
     "Can I use my current home's equity for the down payment?",
     "Yes. A new cash-out refinance, second mortgage or HELOC on the departing residence can fund your down payment, and that liability may also be excluded from your ratios."
+   ],
+   [
+    "What is the Power Buyer program?",
+    "Luminate's Power Buyer program turns your financing pre-approval into a cash offer, so sellers can treat your offer like an all-cash offer."
    ]
   ],
   "/service-areas/orlando/": [

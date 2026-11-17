@@ -494,8 +494,8 @@ def blog_index(p, posts, active_url="/blog/", heading="The Southern Home Loans B
     return doc(p, main)
 
 GLANCE = [
-    ("Conventional products", [("Conventional loans", "/loans/conventional-loans/", "FICO from 620 · DTI up to 50% for eligible borrowers"),
-        ("HomeReady", "/loans/homeready/", "Low down payment · reduced mortgage insurance · income limits by area"),
+    ("Conventional products", [("Conventional loans", "/loans/30-year-fixed-mortgage/", "FICO from 620 · DTI up to 50% for eligible borrowers"),
+        ("HomeReady", "/contact/", "Low down payment · reduced mortgage insurance · income limits by area"),
         ("Home renovation", "/loans/home-renovation-loans/", "Loan based on after-renovation value"),
         ("Manufactured conventional", "/loans/manufactured-home-financing/", "FICO from 640 · DPA up to $18,000")]),
     ("Government products", [("FHA loans", "/loans/fha-loans/", "FICO from 580 · low down payment · low closing costs"),
@@ -504,15 +504,15 @@ GLANCE = [
         ("Manufactured homes (FHA)", "/loans/manufactured-home-financing/", "FICO from 650 · DPA up to $18,000")]),
     ("Portfolio products", [("Medical doctor loan", "/loans/physician-loans/", "Up to $1.5M · no PMI · student loans not an issue"),
         ("Second home purchase", "/loans/second-home-loans/", "720 middle score · up to $1.5M · no MI"),
-        ("Investment property", "/loans/investment-property-loans/", "1–4 units · 5/6 and 7/6 SOFR ARMs"),
+        ("Investment property", "/portfolio-products/", "1–4 units · 5/6 and 7/6 SOFR ARMs"),
         ("Bank statement & DSCR", "/portfolio-products/", "Self-employed and investor qualifying")]),
     ("Jumbo, construction & land", [("Jumbo loans", "/loans/jumbo-loans/", "Up to $3M · 680+ score · primary, second, investment"),
         ("Construction", "/loans/construction-loans/", "One-time close · fix and flip"),
         ("Land and lot loans", "/loans/lot-and-land-loans/", "Up to $1.5M · no minimum or maximum acreage"),
         ("Hobby farms (Marion County)", "/loans/hobby-farm-loans-marion-county/", "Horse properties and homes on acreage")]),
     ("Signature programs", [("Luminate Path DPA", "/loans/down-payment-assistance/", "No first-time buyer requirement · FICO from 620"),
-        ("Power Buyer", "/loans/power-buyer/", "Turn your pre-approval into a cash offer"),
-        ("Buy before you sell", "/loans/buy-before-you-sell/", "Remove your departing home from DTI · up to $5M"),
+        ("Power Buyer", "/loans/buy-before-you-sell/", "Turn your pre-approval into a cash offer"),
+        ("Departing residence", "/loans/buy-before-you-sell/", "Remove your departing home from DTI · up to $5M"),
         ("Home Sale Assured", "/contact/", "Ask us how it works")]),
 ]
 
