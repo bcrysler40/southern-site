@@ -10,8 +10,8 @@
    "description": "Compare FHA, VA, USDA, conventional, jumbo, construction, land, 203(k), reverse and manufactured home loans from Southern Home Loans in Ocala, FL."
   },
   "/loans/builder-advantage-program/": {
-   "title": "Builder Advantage Program | Builder Forward Commitments",
-   "description": "Forward-commitment financing that lets Florida builders offer qualified buyers a below-market fixed rate on new homes. See the rate, APR and full terms."
+   "title": "Builder Forward Commitments in Florida | Southern Home Loans",
+   "description": "Florida builders: offer every qualified buyer a below-market 30-year fixed rate with a forward commitment. See how it compares to buydowns, plus FAQs."
   },
   "/loans/ship/": {
    "title": "SHIP Purchase Assistance in Marion County | Southern Home Loans",
@@ -314,6 +314,40 @@
    [
     "Can I buy the land and the home together?",
     "Yes. You can finance the land and the home in one loan, including a new home that is being delivered and set on your lot."
+   ]
+  ],
+  "/loans/builder-advantage-program/": [
+   [
+    "What is a forward commitment in a mortgage?",
+    "A forward commitment is a pool of mortgage money a builder reserves in advance at a fixed, below-market rate. Any qualified buyer who closes inside the commitment window gets that rate, no matter where market rates go."
+   ],
+   [
+    "How much does a forward commitment cost?",
+    "The cost depends on the rate you choose, the size of the pool and the buyer credit profile. We'll price it against your expected closings so you only reserve what you're likely to use."
+   ],
+   [
+    "Does a forward commitment count toward FHA's 6% seller concession limit?",
+    "No. The forward commitment does not count toward FHA's 6% seller concession limit. You can still contribute up to an additional 6% in seller concessions for your buyer."
+   ],
+   [
+    "Is a forward commitment better than a 2-1 buydown?",
+    "For most builders, yes. A 2-1 buydown lowers the payment for only the first two years, and buyers usually still qualify at the full rate. A forward commitment lowers the rate for the life of a 30-year fixed loan, so it also helps more buyers qualify."
+   ],
+   [
+    "How long does a commitment window last?",
+    "Commitment windows are set up to match your build and close schedule. We'll review your pipeline and recommend a window that fits."
+   ],
+   [
+    "Which loan types qualify for the Builder Advantage rate?",
+    "The Builder Advantage rate is available on 30-year fixed FHA, VA, USDA and conventional loans. Ask about construction-to-permanent options for buyers who need something different."
+   ],
+   [
+    "Do buyers have to finance with Southern Home Loans to get the rate?",
+    "Yes. The committed rate is available to qualified buyers who finance with Southern Home Loans and close within the commitment window."
+   ],
+   [
+    "Do you work with builders outside Marion County?",
+    "Yes. We work with builders across Florida, not just in Ocala, Marion County and Citrus County. Call us to talk about a commitment for your communities."
    ]
   ]
  }
