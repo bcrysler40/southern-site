@@ -26,6 +26,11 @@
   ],
   "redirects": [
     {
+      "source": "/category/uncategorized/",
+      "destination": "/category/educational-blogs/",
+      "permanent": true
+    },
+    {
       "source": "/homes-for-heroes-a-program-that-benefits-homebuyers-with-discounts-and-savings/",
       "destination": "/home-loans-for-first-responders/",
       "permanent": true
