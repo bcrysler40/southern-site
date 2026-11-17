@@ -570,6 +570,7 @@ def build():
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
         f"<url><loc>{DOMAIN}{u}</loc><lastmod>{BY_URL.get(u,{}).get('modified') or today}</lastmod></url>\n" for u in urls) + "</urlset>\n"
     open(os.path.join(OUT, "sitemap.xml"), "w").write(sm)
+    open(os.path.join(OUT, "b7589c92ab5559310f68eff9e7b66b65.txt"), "w").write("b7589c92ab5559310f68eff9e7b66b65")   # IndexNow key (Bing, Yandex, etc.)
     open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n")
     shutil.copy(os.path.join(UPLOADS_SRC, "2023/09/cropped-Favicon-Compass-32x32.png"), os.path.join(OUT, "favicon.ico"))
     print(f"built {len(PAGES)} pages, {len(used)} images ({missing} missing)")
