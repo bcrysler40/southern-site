@@ -54,7 +54,8 @@ BY_URL = {p["url"]: p for p in PAGES}
 SEO = json.load(open(os.path.join(ROOT, "content", "seo.json")))
 AREAS = [("Ocala", "/service-areas/ocala/"), ("Gainesville", "/service-areas/gainesville/"), ("Crystal River", "/service-areas/crystal-river/"),
          ("Inverness", "/service-areas/inverness/"), ("Spring Hill", "/service-areas/spring-hill/"), ("Hernando", "/service-areas/hernando/"),
-         ("Levy County", "/service-areas/levy-county/"), ("All of Florida", "/service-areas/mortgages-and-fha-loans-in-florida/")]
+         ("Levy County", "/service-areas/levy-county/"), ("Orlando", "/service-areas/orlando/"),
+         ("Jacksonville", "/service-areas/jacksonville/"), ("St. Augustine", "/service-areas/st-augustine/"), ("All of Florida", "/service-areas/mortgages-and-fha-loans-in-florida/")]
 
 def _meta_set(meta, key, value):
     """Replace the content of an og:/twitter: tag (Yoast/RankMath output) or add it."""
@@ -492,11 +493,40 @@ def blog_index(p, posts, active_url="/blog/", heading="The Southern Home Loans B
     main = hero + f'<section class="s"><div class="wrap"><div class="chips">{chips}</div>{post_cards(posts)}</div></section>' + cta_band()
     return doc(p, main)
 
+GLANCE = [
+    ("Conventional products", [("Conventional loans", "/loans/conventional-loans/", "FICO from 620 · DTI up to 50% for eligible borrowers"),
+        ("HomeReady", "/loans/homeready/", "Low down payment · reduced mortgage insurance · income limits by area"),
+        ("Home renovation", "/loans/home-renovation-loans/", "Loan based on after-renovation value"),
+        ("Manufactured conventional", "/loans/manufactured-home-financing/", "FICO from 640 · DPA up to $18,000")]),
+    ("Government products", [("FHA loans", "/loans/fha-loans/", "FICO from 580 · low down payment · low closing costs"),
+        ("VA loans", "/loans/va-loans/", "No mortgage insurance · no lender overlays · FICO from 580"),
+        ("USDA loans", "/loans/usda-loans/", "Low upfront cash for eligible areas · income limits apply"),
+        ("Manufactured homes (FHA)", "/loans/manufactured-home-financing/", "FICO from 650 · DPA up to $18,000")]),
+    ("Portfolio products", [("Medical doctor loan", "/loans/physician-loans/", "Up to $1.5M · no PMI · student loans not an issue"),
+        ("Second home purchase", "/loans/second-home-loans/", "720 middle score · up to $1.5M · no MI"),
+        ("Investment property", "/loans/investment-property-loans/", "1–4 units · 5/6 and 7/6 SOFR ARMs"),
+        ("Bank statement & DSCR", "/portfolio-products/", "Self-employed and investor qualifying")]),
+    ("Jumbo, construction & land", [("Jumbo loans", "/loans/jumbo-loans/", "Up to $3M · 680+ score · primary, second, investment"),
+        ("Construction", "/loans/construction-loans/", "One-time close · fix and flip"),
+        ("Land and lot loans", "/loans/lot-and-land-loans/", "Up to $1.5M · no minimum or maximum acreage"),
+        ("Hobby farms (Marion County)", "/loans/hobby-farm-loans-marion-county/", "Horse properties and homes on acreage")]),
+    ("Signature programs", [("Luminate Path DPA", "/loans/down-payment-assistance/", "No first-time buyer requirement · FICO from 620"),
+        ("Power Buyer", "/loans/power-buyer/", "Turn your pre-approval into a cash offer"),
+        ("Buy before you sell", "/loans/buy-before-you-sell/", "Remove your departing home from DTI · up to $5M"),
+        ("Home Sale Assured", "/contact/", "Ask us how it works")]),
+]
+
+def glance():
+    cols = "".join(f'<div class="gl-col"><h3>{esc(h)}</h3>' + "".join(
+        f'<a href="{u}"><b>{esc(t)}</b><span>{esc(d)}</span></a>' for t, u, d in items) + "</div>" for h, items in GLANCE)
+    return f"""<section class="s alt"><div class="wrap"><div class="s-head"><span class="eyebrow">Products &amp; benefits</span><h2>Every program at a glance</h2>
+<p>Down payment and loan-to-value limits vary by program, property and credit. Ask us for the current limits for your scenario.</p></div><div class="glance">{cols}</div></div></section>"""
+
 def render_loans(p):
     main = page_hero(p, eyebrow="Loan options", lead="Compare the programs we offer for buyers, builders and investors, then get a free quote on the one that fits.", image="") + \
-        f'<section class="s"><div class="wrap">{loan_cards()}</div></section>' + \
+        f'<section class="s"><div class="wrap">{loan_cards()}</div></section>' + glance() + \
         f"""<section class="s alt"><div class="wrap split"><div><span class="eyebrow">Investors &amp; self-employed</span><h2>Portfolio products</h2>
-<p>Bank-statement, investor cash-flow and ATR-in-full programs with simplified qualifications.</p><a class="btn btn-navy" href="/portfolio-products/">Explore portfolio products</a></div>
+<p>Bank-statement, DSCR, physician, second home and investment property programs, plus expanded programs up to $5 million.</p><a class="btn btn-navy" href="/portfolio-products/">Explore portfolio products</a></div>
 <div>{quote_form()}</div></div></section>""" + reviews() + cta_band()
     return doc(p, main)
 

@@ -259,3 +259,18 @@ footer.site ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
 
 .map-cta{background:var(--navy,#0c173d);color:#fff;border-radius:16px;padding:26px 28px;margin:0 0 30px}
 .map-cta h3{color:#fff;margin:6px 0 8px}.map-cta p{color:#d6dcef;margin:0 0 16px}.map-cta .eyebrow{color:#17c7c4}
+
+/* program highlight boxes + products at a glance (Nov 2026) */
+.content .hl{background:var(--teal-l);border:1px solid #c9f2f1;border-left:5px solid var(--teal);border-radius:var(--r);padding:24px 26px}
+.content .hl h2{margin-top:0;font-size:1.3rem}
+.content .hl h2 a{color:var(--navy)}
+.content .hl .checks{margin:14px 0 6px}
+.content .hl-note{font-size:.88rem;color:var(--mute);margin:12px 0 0}
+.glance{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.gl-col{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--shadow)}
+.gl-col h3{background:var(--navy);color:#fff;margin:-20px -20px 14px;padding:12px 18px;border-radius:var(--r) var(--r) 0 0;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+.gl-col a{display:block;padding:10px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.gl-col a:last-child{border-bottom:0}
+.gl-col a b{display:block;color:var(--navy)}
+.gl-col a:hover b{color:var(--teal-d)}
+.gl-col a span{display:block;font-size:.86rem;color:var(--mute);margin-top:2px}

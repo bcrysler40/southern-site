@@ -70,8 +70,8 @@
    "description": "FHA, VA, USDA and conventional financing for manufactured homes on a permanent foundation and land you own in Florida. Get a free quote today."
   },
   "/portfolio-products/": {
-   "title": "Bank Statement & DSCR Loans in Florida | Southern Home Loans",
-   "description": "Self-employed and investor loans: 3- and 12-month bank statement programs, DSCR investor cash-flow loans and ATR-in-full options across Florida."
+   "title": "Bank Statement, DSCR & Portfolio Loans in Florida | SHL",
+   "description": "Florida portfolio loans from Luminate Bank: bank statement loans for the self-employed, DSCR investor loans, physician, second home, investment and land loans."
   },
   "/builders/": {
    "title": "New Construction Homes with Builder Rate | Southern Home Loans",
@@ -115,6 +115,54 @@
   "/service-areas/gainesville/": {
    "title": "Gainesville, FL Mortgage Lender | Southern Home Loans",
    "description": "Home loans for Gainesville and Alachua County buyers: FHA, VA, USDA, conventional, construction and DSCR loans, plus options for UF parents. Get pre-approved."
+  },
+  "/loans/conventional-loans/": {
+   "title": "Conventional Home Loans in Florida | Southern Home Loans",
+   "description": "Conventional mortgages in Florida with credit scores from 620, flexible DTI and options for primary, second and investment homes. Get pre-approved in Ocala."
+  },
+  "/loans/homeready/": {
+   "title": "HomeReady Loans in Florida | Southern Home Loans",
+   "description": "Fannie Mae HomeReady loans in Florida: low down payment, reduced mortgage insurance and income limits by area. See if you qualify with Southern Home Loans."
+  },
+  "/loans/home-renovation-loans/": {
+   "title": "Home Renovation Loans in Florida | Southern Home Loans",
+   "description": "Buy or refinance and renovate with one loan based on the home's after-repair value. Conventional renovation and FHA 203(k) loans from Southern Home Loans."
+  },
+  "/loans/physician-loans/": {
+   "title": "Physician Home Loans in Florida | Southern Home Loans",
+   "description": "Florida medical doctor loans up to $1.5M with no PMI, 720 middle score and student loans that don't stand in the way. Portfolio financing from Luminate Bank."
+  },
+  "/loans/second-home-loans/": {
+   "title": "Second Home Loans in Florida | Southern Home Loans",
+   "description": "Florida second home and vacation home loans, including non-conforming portfolio loans up to $1.5M with no mortgage insurance. Talk with Southern Home Loans."
+  },
+  "/loans/investment-property-loans/": {
+   "title": "Investment Property Loans in Florida | Southern Home Loans",
+   "description": "Florida rental and investment property loans: conventional, DSCR and portfolio financing up to $1.5M on 1–4 units with 5/6 and 7/6 SOFR ARMs."
+  },
+  "/loans/power-buyer/": {
+   "title": "Power Buyer Cash Offer Program | Southern Home Loans",
+   "description": "Turn your pre-approval into a cash offer with Luminate's Power Buyer program. Compete with cash buyers in Ocala and across Florida."
+  },
+  "/loans/hobby-farm-loans-marion-county/": {
+   "title": "Hobby Farm Loans in Marion County, FL | Southern Home Loans",
+   "description": "Financing for hobby farms, horse properties and homes on acreage in Ocala and Marion County. Conventional, FHA, VA, USDA, land and construction loans."
+  },
+  "/loans/buy-before-you-sell/": {
+   "title": "Buy Before You Sell: Departing Residence Loans | SHL",
+   "description": "Buy your next Florida home before selling: remove your departing residence from DTI, tap equity for your down payment, loans up to $5M. Southern Home Loans."
+  },
+  "/service-areas/orlando/": {
+   "title": "Orlando, FL Mortgage Lender | Southern Home Loans",
+   "description": "Orlando home loans: FHA, VA, conventional, jumbo, new construction, DSCR and investor loans across Orange, Seminole and Osceola counties. Get pre-approved."
+  },
+  "/service-areas/jacksonville/": {
+   "title": "Jacksonville, FL Mortgage Lender | Southern Home Loans",
+   "description": "Jacksonville home loans: VA loans with no lender overlays, FHA, USDA, conventional, jumbo, construction and DSCR loans across Northeast Florida."
+  },
+  "/service-areas/st-augustine/": {
+   "title": "St. Augustine, FL Mortgage Lender | Southern Home Loans",
+   "description": "St. Augustine home loans: second home, jumbo, renovation, FHA, VA, conventional and DSCR loans across St. Johns County. Get pre-approved today."
   }
  },
  "faqs": {
@@ -372,6 +420,158 @@
    [
     "Do you work with builders outside Marion County?",
     "Yes. We work with builders across Florida, not just in Ocala, Marion County and Citrus County. Call us to talk about a commitment for your communities."
+   ]
+  ],
+  "/loans/conventional-loans/": [
+   [
+    "What credit score do I need for a conventional loan?",
+    "Southern Home Loans offers conventional loans with credit scores as low as 620. Higher scores usually mean a better rate and lower mortgage insurance."
+   ],
+   [
+    "Can I use a conventional loan for a second home or rental?",
+    "Yes. Conventional loans can finance a primary residence, a second home or an investment property, each with its own down payment and credit requirements."
+   ],
+   [
+    "Can I get rid of mortgage insurance on a conventional loan?",
+    "Yes. Private mortgage insurance on a conventional loan can be cancelled once you reach the required equity, either through payments or appreciation."
+   ]
+  ],
+  "/loans/homeready/": [
+   [
+    "What are the HomeReady income limits?",
+    "HomeReady income limits are set by area. In most areas your household income must be at or below 80% of the area median income. We'll check the limit for the address you're buying."
+   ],
+   [
+    "Is HomeReady only for first-time buyers?",
+    "No. HomeReady is available to first-time and repeat buyers. If all borrowers are first-time buyers, a short homebuyer education course is required."
+   ]
+  ],
+  "/loans/home-renovation-loans/": [
+   [
+    "How is a renovation loan amount determined?",
+    "The loan is based on the home's appraised value after the planned renovations are complete, using your contractor's scope of work and bids."
+   ],
+   [
+    "Can I refinance and renovate my current home?",
+    "Yes. A renovation loan can refinance your existing mortgage and finance improvements in a single loan with one closing."
+   ]
+  ],
+  "/loans/physician-loans/": [
+   [
+    "Who is eligible for the medical doctor loan?",
+    "The program is for medical doctors (MD). Borrowers need a 720 middle credit score, a debt-to-income ratio up to 43% and three months of reserves."
+   ],
+   [
+    "Does the physician loan require mortgage insurance?",
+    "No. The medical doctor loan does not require private mortgage insurance."
+   ],
+   [
+    "How are student loans treated?",
+    "Student loan debt is not an issue on this program, so it won't stand in the way of qualifying."
+   ]
+  ],
+  "/loans/second-home-loans/": [
+   [
+    "What credit score do I need for a second home loan?",
+    "Our portfolio second home loans require a 720 middle credit score. Conventional second home loans have their own credit requirements, which we'll review with you."
+   ],
+   [
+    "Is mortgage insurance required on a second home?",
+    "Our portfolio second home loans do not require mortgage insurance."
+   ]
+  ],
+  "/loans/investment-property-loans/": [
+   [
+    "Can I finance a 2–4 unit property?",
+    "Yes. Our investment property financing covers 1–4 unit properties."
+   ],
+   [
+    "What is a DSCR loan?",
+    "A debt service coverage ratio (DSCR) loan qualifies you based on the property's rental income compared with its housing payment, instead of your personal income documents."
+   ]
+  ],
+  "/loans/hobby-farm-loans-marion-county/": [
+   [
+    "Can I use a regular mortgage to buy a hobby farm?",
+    "Often, yes. If the property is mainly residential and the land is for personal use, conventional, FHA, VA or USDA financing may work. Working farms that are your main source of income usually need agricultural financing."
+   ],
+   [
+    "Is there a limit on acreage?",
+    "It depends on the loan. Our lot and land loans have no minimum or maximum acreage requirement. For homes on acreage, the appraisal needs comparable sales with similar land, which we'll review with you."
+   ],
+   [
+    "Does my hobby farm qualify for the Florida agricultural (greenbelt) classification?",
+    "The classification is for land used for a bona fide commercial agricultural purpose, so hobby use alone usually doesn't qualify. The Marion County Property Appraiser decides eligibility."
+   ],
+   [
+    "Do barns and fencing add value in the appraisal?",
+    "They can, but appraisers often give outbuildings limited value. We'll help set expectations before you make an offer."
+   ]
+  ],
+  "/portfolio-products/": [
+   [
+    "What is a non-QM or portfolio loan?",
+    "It's a loan the bank keeps on its own books rather than selling to Fannie Mae or Freddie Mac, so it can use flexible guidelines such as bank statements or rental income to qualify."
+   ],
+   [
+    "Who are portfolio loans for?",
+    "Self-employed borrowers, real estate investors, physicians, second home buyers and anyone buying a property that doesn't fit standard guidelines."
+   ],
+   [
+    "What's the minimum down payment on a portfolio loan?",
+    "It depends on the program, the property and your credit. Call us for the current limits for your scenario."
+   ]
+  ],
+  "/loans/buy-before-you-sell/": [
+   [
+    "Can I qualify for a new home without counting my current mortgage?",
+    "With this program, the departing residence can be removed from your debt-to-income ratio, subject to program guidelines and underwriting approval."
+   ],
+   [
+    "Can I use my current home's equity for the down payment?",
+    "Yes. A new cash-out refinance, second mortgage or HELOC on the departing residence can fund your down payment, and that liability may also be excluded from your ratios."
+   ]
+  ],
+  "/service-areas/orlando/": [
+   [
+    "Do you lend in Orlando if your office is in Ocala?",
+    "Yes. Southern Home Loans lends across all of Florida, including Orlando and Orange, Seminole, Osceola and Lake counties. Most of the process happens online and by phone."
+   ],
+   [
+    "Can I finance an Orlando vacation rental?",
+    "Yes. Investment property and DSCR loans can qualify you on the property's rental income, and our expanded programs allow non-warrantable condos and condotels."
+   ],
+   [
+    "Do you offer down payment assistance in Orlando?",
+    "Yes. Luminate Path has no first-time homebuyer requirement, and eligible buyers may also use Florida Hometown Heroes when funds are available."
+   ]
+  ],
+  "/service-areas/jacksonville/": [
+   [
+    "Do you offer VA loans in Jacksonville?",
+    "Yes. We offer VA loans with no lender overlays and no monthly mortgage insurance for eligible veterans and service members, including those stationed at NAS Jacksonville and Naval Station Mayport."
+   ],
+   [
+    "Which areas around Jacksonville do you serve?",
+    "All of Duval, Clay, Nassau and St. Johns counties, plus the rest of Florida."
+   ],
+   [
+    "Can I get a USDA loan near Jacksonville?",
+    "Many areas in Clay and Nassau counties and parts of outlying Duval County may be USDA-eligible. We'll check the exact address for you."
+   ]
+  ],
+  "/service-areas/st-augustine/": [
+   [
+    "Can I finance a second home in St. Augustine?",
+    "Yes. We offer conventional, jumbo and portfolio second home loans, including portfolio financing up to $1.5 million with no mortgage insurance."
+   ],
+   [
+    "Can I buy a historic home that needs work?",
+    "Yes. Renovation loans and FHA 203(k) loans can finance the purchase and the improvements together, based on the home's value after the work."
+   ],
+   [
+    "Do St. Augustine homes need flood insurance?",
+    "Homes in FEMA flood zones with a federally backed mortgage need flood insurance. We'll help you check the flood zone and include the cost in your payment estimate."
    ]
   ]
  }
