@@ -15,7 +15,7 @@ DOMAIN = "https://southernhl.com"
 PHONE, PHONE_TEL = "352-622-1521", "+13526221521"
 EMAIL = "bc@southernhl.co"
 ADDRESS = ("2050 E Silver Springs Blvd", "Ocala, FL 34470")
-APPLY = "https://goluminate.tidalwave.ai/signup/brandon.crysler/D831E6THA3VLDR8GHACG"
+APPLY = "https://southernhl.co"
 NMLS = "162096"
 HS_PORTAL, HS_FORM, HS_REGION = "242109586", "f7c9da26-9530-4f31-92b1-4db11e576281", "na2"
 ELFSIGHT = "elfsight-app-f2051ee6-0c7b-461c-9366-2b071b010398"
@@ -484,7 +484,7 @@ def render_post(p):
 <section class="s alt"><div class="wrap"><div class="s-head"><h2>Keep reading</h2></div>{post_cards(related)}</div></section>""" + cta_band()
     return doc(p, main)
 
-def blog_index(p, posts, active_url="/blog/", heading="The HomeTown Blog"):
+def blog_index(p, posts, active_url="/blog/", heading="The Southern Home Loans Blog"):
     chips = f'<a class="chip{" on" if active_url=="/blog/" else ""}" href="/blog/">All</a>' + "".join(
         f'<a class="chip{" on" if u==active_url else ""}" href="{u}">{esc(n)}</a>' for u, n in CATS.items() if any(x.get("category") == n for x in POSTS))
     hero = f"""<section class="hero page-hero noimg on-dark" style="--hero-img:url('{HERO}')"><div class="wrap">
