@@ -128,9 +128,9 @@
    "title": "St. Augustine, FL Mortgage Lender | Southern Home Loans",
    "description": "St. Augustine home loans: second home, jumbo, renovation, FHA, VA, conventional and DSCR loans across St. Johns County. Get pre-approved today."
   },
-  "/loans/hobby-farm-loans-marion-county/": {
-   "title": "Hobby Farm Loans in Marion County, FL | Southern Home Loans",
-   "description": "Financing for hobby farms, horse properties and homes on acreage in Ocala and Marion County. Conventional, FHA, VA, USDA, land and construction loans."
+  "/loans/hobby-farm-loans/": {
+   "title": "Hobby Farm Loans in Florida | Southern Home Loans",
+   "description": "Financing for hobby farms, horse properties and homes on acreage across Florida. Conventional, FHA, VA, USDA, land and construction loans."
   }
  },
  "faqs": {
@@ -432,24 +432,6 @@
     "Homes in FEMA flood zones with a federally backed mortgage need flood insurance. We'll help you check the flood zone and include the cost in your payment estimate."
    ]
   ],
-  "/loans/hobby-farm-loans-marion-county/": [
-   [
-    "Can I use a regular mortgage to buy a hobby farm?",
-    "Often, yes. If the property is mainly residential and the land is for personal use, conventional, FHA, VA or USDA financing may work. Working farms that are your main source of income usually need agricultural financing."
-   ],
-   [
-    "Is there a limit on acreage?",
-    "It depends on the loan. Our lot and land loans have no minimum or maximum acreage requirement. For homes on acreage, the appraisal needs comparable sales with similar land, which we'll review with you."
-   ],
-   [
-    "Does my hobby farm qualify for the Florida agricultural (greenbelt) classification?",
-    "The classification is for land used for a bona fide commercial agricultural purpose, so hobby use alone usually doesn't qualify. The Marion County Property Appraiser decides eligibility."
-   ],
-   [
-    "Do barns and fencing add value in the appraisal?",
-    "They can, but appraisers often give outbuildings limited value. We'll help set expectations before you make an offer."
-   ]
-  ],
   "/portfolio-products/": [
    [
     "What is a non-QM or portfolio loan?",
@@ -462,6 +444,24 @@
    [
     "What's the minimum down payment on a portfolio loan?",
     "It depends on the program, the property and your credit. Call us for the current limits for your scenario."
+   ]
+  ],
+  "/loans/hobby-farm-loans/": [
+   [
+    "Can I use a regular mortgage to buy a hobby farm?",
+    "Often, yes. If the property is mainly residential and the land is for personal use, conventional, FHA, VA or USDA financing may work. Working farms that are your main source of income usually need agricultural financing."
+   ],
+   [
+    "Is there a limit on acreage?",
+    "It depends on the loan. Our lot and land loans have no minimum or maximum acreage requirement. For homes on acreage, the appraisal needs comparable sales with similar land, which we'll review with you."
+   ],
+   [
+    "Does my hobby farm qualify for the Florida agricultural (greenbelt) classification?",
+    "The classification is for land used for a bona fide commercial agricultural purpose, so hobby use alone usually doesn't qualify. Your county property appraiser decides eligibility."
+   ],
+   [
+    "Do barns and fencing add value in the appraisal?",
+    "They can, but appraisers often give outbuildings limited value. We'll help set expectations before you make an offer."
    ]
   ]
  }

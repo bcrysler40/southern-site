@@ -79,6 +79,11 @@
       "source": "/apply-online/",
       "destination": "https://goluminate.tidalwave.ai/signup/brandon.crysler/D831E6THA3VLDR8GHACG",
       "permanent": false
+    },
+    {
+      "source": "/loans/hobby-farm-loans-marion-county/",
+      "destination": "/loans/hobby-farm-loans/",
+      "permanent": true
     }
   ]
 }
