@@ -31,7 +31,7 @@
   },
   "/loans/down-payment-assistance/": {
    "title": "Florida Hometown Heroes & Down Payment Assistance 2026",
-   "description": "Get up to $35,000 with Florida Hometown Heroes, or compare Luminate Path, FL Assist, HFA PLUS and SHIP. Participating Florida Housing lender in Ocala."
+   "description": "Compare Florida Hometown Heroes, Luminate Path, county HFA programs, St. Johns County SHIP and MCCs. Participating Florida Housing lender in Ocala."
   },
   "/loans/15-year-fixed-mortgage/": {
    "title": "15-Year Fixed Mortgage in Florida | Southern Home Loans",
@@ -273,7 +273,7 @@
    ],
    [
     "What down payment assistance is available in Florida?",
-    "Florida buyers can use Florida Hometown Heroes, Luminate Path from Luminate Bank, other Florida Housing programs (FL Assist, FL HLP and HFA PLUS) and county SHIP programs such as Marion County SHIP when funding is open. Southern Home Loans compares the options you qualify for side by side."
+    "Florida buyers can use Florida Hometown Heroes, Luminate Path from Luminate Bank, other Florida Housing programs (FL Assist, FL HLP and HFA PLUS), county housing finance authority programs in counties such as Hillsborough, Lee, Manatee, Miami-Dade, Pinellas, Orange and Escambia, and county SHIP programs such as Marion County and St. Johns County SHIP when funding is open. Southern Home Loans compares the options you qualify for side by side."
    ],
    [
     "Do I have to be a first-time buyer to get down payment assistance?",
@@ -285,7 +285,7 @@
    ],
    [
     "What credit score do I need for down payment assistance in Florida?",
-    "Florida Housing programs generally require at least a 640 credit score, and Marion County SHIP requires at least 580. Requirements for Luminate Path depend on the loan type. We'll check your options when you apply."
+    "Most Florida Housing and county HFA programs require at least a 640 credit score, and some county HFA programs require 660 for FHA loans. St. Johns County SHIP requires 640 and Marion County SHIP requires 580. Requirements for Luminate Path depend on the loan type. We'll check your options when you apply."
    ],
    [
     "What are the income limits for down payment assistance in Florida?",
@@ -298,6 +298,22 @@
    [
     "Can down payment assistance cover closing costs?",
     "Yes. Most programs, including Luminate Path and the Florida Housing programs, can be used for the down payment, closing costs or both."
+   ],
+   [
+    "Which Florida counties have their own down payment assistance programs?",
+    "County housing finance authorities administered by eHousingPlus offer assistance in Escambia County ($10,000), Hillsborough, Brevard and Clay ($15,000), Duval ($10,000), City of Tampa ($5,000), Lee, Charlotte, Collier, DeSoto and Sarasota ($10,500), Palm Beach ($17,500), Manatee ($15,000), Miami-Dade ($15,000), Pinellas ($10,000), Pasco and Polk ($7,500), and Orange, Osceola, Seminole and Lake (up to $10,000). Many counties also run SHIP purchase assistance. Southern Home Loans is an approved eHousingPlus participating lender."
+   ],
+   [
+    "What is the St. Johns County SHIP down payment assistance program?",
+    "St. Johns County SHIP provides up to $100,000 as a 0% interest, 15-year deferred second mortgage that is forgiven 10% a year starting in year six. Buyers must live or work in St. Johns County for 12 months, be first-time buyers, earn up to 120% of area median income, have at least a 640 credit score and complete homebuyer education with the county's housing counselor. Southern Home Loans is an approved St. Johns County SHIP lender."
+   ],
+   [
+    "What is a Mortgage Credit Certificate in Florida?",
+    "A Mortgage Credit Certificate (MCC) is a federal tax credit for first-time buyers equal to a share of the mortgage interest paid each year. The Escambia County HFA, HFA of Hillsborough County (Hillsborough and Clay counties), HFA of Manatee County and Jacksonville HFA (Duval County) currently offer MCCs with a 20% credit rate."
+   ],
+   [
+    "Is there down payment assistance in Florida if I've owned a home before?",
+    "Yes. Luminate Path has no first-time buyer requirement anywhere in Florida, and Orange County HFA's Central Florida Housing Opportunities program provides $7,500 in Orange, Osceola, Seminole and Lake counties without a first-time buyer requirement. Honorably discharged veterans are also exempt from the first-time buyer rule on Florida Housing programs."
    ]
   ],
   "/loans/jumbo-loans/": [

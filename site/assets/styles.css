@@ -141,6 +141,7 @@ section.dark h2,section.dark h3{color:#fff}
 
 /* content pages */
 .content-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:56px;align-items:start}
+.content-grid>*{min-width:0}
 .prose{font-size:1.05rem;max-width:760px}
 .prose h2{font-size:1.75rem;margin:1.8em 0 .55em}
 .prose h3{font-size:1.3rem;margin:1.6em 0 .5em}
